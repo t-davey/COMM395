@@ -1,0 +1,5 @@
+Carousel:
+http://visuallightbox.com/content/30-best-image-sliders-173.html
+
+Bootstrap-stack:
+https://getbootstrap.com/assets/img/bootstrap-stack.png
