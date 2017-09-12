@@ -1,7 +1,8 @@
  @charset "UTF-8";
 
 body {
-    background-color: #999999;
+    /* background-color: #BAA4DB; */
+    background-image: url("images/test.png");
 }
 
  .container {
@@ -23,7 +24,7 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 0.125em solid #5925A4;
+    border-bottom: 0.125em solid #8D59DB;
     background-color: white;    
  }
 
@@ -39,18 +40,29 @@ body {
     margin-right: auto;
     padding: 5em;
     width: 30%;
-    border-bottom: 0.125em solid #5925A4;
+    border-bottom: 0.125em solid #8D59DB;
     background-color: white;    
     
 }
 
-.image_box {
+.sm_image_box {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em;
+    width: 50%;
+    border-bottom: 0.125em solid #8D59DB;
+    background-color: white;    
+    
+}
+
+.med_image_box {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     padding: 5em;
     width: 65%;
-    border-bottom: 0.125em solid #5925A4;
+    border-bottom: 0.125em solid #8D59DB;
     background-color: white;    
     
 }
@@ -61,7 +73,7 @@ body {
     margin-right: auto;
     padding: 5em;
     width: 85%;
-    border-bottom: 0.125em solid #5925A4;
+    border-bottom: 0.125em solid #8D59DB;
     background-color: white;    
     
 }
@@ -75,12 +87,12 @@ body {
 }
 
 .title_border {
-    border-bottom: 0.125em solid #8B25A4;
+    border-bottom: 0.125em solid #8D59DB;
     margin-bottom: 1em;    
 }
 
 .shadow {
-    box-shadow: 0.125em 0.125em 0.5em #000000;
+    box-shadow: 0.125em 0.125em 0.25em  #000000;
 }
 
  .feature_list {
@@ -90,11 +102,12 @@ body {
  }
 
  .component_footer {
-    width: 33%;
-    margin-left: 33%;
-    margin-right: 33%;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
-	border-top: 0.125em solid #844FD1;
+	border-top: 0.125em solid #8D59DB;
 }
 
 .copyright {

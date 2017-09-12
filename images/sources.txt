@@ -3,3 +3,6 @@ http://visuallightbox.com/content/30-best-image-sliders-173.html
 
 Bootstrap-stack:
 https://getbootstrap.com/assets/img/bootstrap-stack.png
+
+Components:
+https://encrypted.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwirldvf1KDWAhXly4MKHYBLDVQQjxwIAw&url=http%3A%2F%2Fwww.d3noob.org%2F2013%2F07%2Fgetting-started-using-bootstrap-with.html&psig=AFQjCNGr9dtLokaav-49o9lLYaRU6FWgsg&ust=1505340566243556
