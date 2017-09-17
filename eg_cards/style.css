@@ -1,0 +1,118 @@
+*, *::after {
+  box-sizing: border-box; /*-- sets box math for all elements --*/
+}
+body {
+  width: 85%;  /*-- sets width of whole body to 85% --*/
+  margin: 0 auto;  /*-- centers the whole body --*/
+  font-family: 'Montserrat', sans-serif;  /*-- sets font and fallback --*/
+}
+figure {
+  margin: 0 0 1em 0;  /*-- adds bottom margin to figures --*/
+  padding: 0;  /*-- removes padding from figures --*/
+}
+img {
+  width: 100%;  /*-- makes all images responsive --*/
+}
+a {
+  color:blue;  /*-- sets all link colors --*/
+}
+a:hover, a:visited {
+  color:purple;  /*-- sets all links colors when hover or visited --*/
+}
+nav {
+  border: 1px solid #333;  /*-- adds a border to nav --*/
+  margin-bottom: 4em;  /*-- adds big bottom margin --*/
+  padding: .5em 0;  /*-- adds a little top and bottom padding --*/
+}
+nav::after {  /*-- standard clearfix after containing element --*/
+  content: "";
+  clear: both;
+  display: table;
+}
+nav ul {
+  list-style: none; /*-- hides bullets on list item children --*/
+  display: inline-block;  /*-- displays both lists side-by-side --*/
+  padding-left: 0;  /*-- removes left padding --*/
+}
+nav ul li {
+  display: inline-block; /*-- makes both lists horizontal --*/
+  padding-left: 1em;  /*-- spaces out list items from each other --*/
+}
+.menu {
+  margin-left: 1em;  /*-- gives a little space to the left of the .menu --*/
+}
+.social-links {
+  float: right;  /*-- "floats" social menu to the right --*/
+  margin-right: 1em;  /*-- stops menu from touching right side --*/
+}
+.reverse-block {
+  background-color: #dadada;  /*-- sets container's background color --*/
+  text-align: center;  /*-- aligns the text center --*/
+  padding: .5em;  /*-- puts a little internal space around text --*/
+}
+footer {
+  margin-top: 4em;  /*-- adds big space above the footer --*/
+  border: 1px solid #333;  /*-- adds border around footer --*/
+  text-align: center;  /*-- centers text in the footer --*/
+}
+/*-- DOCUMENT STYLES --*/
+.container {
+  display: flex; /*-- sets grid container display to flex --*/
+  flex-wrap: wrap;  /*-- allows flex item children to wrap --*/
+  flex-direction: row;  /*-- arranges flex item children in a row --*/
+}
+.cards-item {
+  display: flex;  /*-- sets card container display to flex --*/
+  flex-direction: column;  /*-- arranges flex item children in a column --*/
+  padding: 2rem .5rem;  /*-- bigger padding top and bottom, a little left and right --*/
+}
+@media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
+  .cards-item {width: 50%;} /*-- sets card width to half of the page --*/
+}
+@media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
+  .cards-item {width: 33.33333%;} /*-- sets card width to one-third of the page --*/
+}
+@media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
+  .cards-item {width: 25%;} /*-- sets card width to one-quarter of the page --*/
+}
+.card {
+  border: 1px solid #dadada;
+}
+.card-image { /*-- general styles for card images --*/
+  background-size: cover;  /*-- sets images size to cover --*/
+  background-position: center center;  /*-- certers verically and horizontally --*/
+  padding-bottom: 60%;  /*-- for 16:9 aspect ratio --*/
+  filter: contrast(70%); /*-- adds 70% contrast filter to image --*/
+  transition: filter 0.3s ease-in;  /*-- sets filter transition speed and easing --*/
+}
+.card:hover .card-image {
+    filter: contrast(100%);  /*-- transitions to 100% filter on hover --*/
+}
+.card-content {
+  display: flex;  /*-- sets card-content wrapper to flex --*/
+  flex: 1 1 auto;  /*-- sets flex-grow, flex-shrink, flex-basis values  --*/
+  flex-direction: column; /*-- arranges children in a column  --*/
+  padding: .75rem;  /*-- adds good padding inside card content area --*/
+}
+.card-title {
+  margin-bottom: 0;  /*-- removes bottom margin of card title --*/
+  font-weight: 700;  /*-- makes title font weight heavier --*/
+}
+.card-btn {
+  text-transform: uppercase;  /*-- sets uppercase text --*/
+  font-size: .75rem;  /*-- smaller font size --*/
+  padding: .5rem;  /*-- a little internal space --*/
+}
+/*-- IMAGE BACKGROUNDS --*/
+.fence {
+  background-image: url('pix/fence.jpg');
+}
+.flowers {
+  background-image: url('pix/flowers.jpg');
+}
+.record {
+  background-image: url('pix/record.jpg');
+}
+.river {
+  background-image: url('pix/river.jpg');
+}
