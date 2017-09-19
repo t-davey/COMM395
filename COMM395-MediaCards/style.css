@@ -1,5 +1,4 @@
  @charset "UTF-8";
-
  body {
      background-image: url("images/test.png");
  }
@@ -32,13 +31,13 @@
  }
 
  .row {
-      display: -webkit-flex;
-      display: flex;
-      flex-wrap: wrap;
-      height: 10%;
-  }
+     display: -webkit-flex;
+     display: flex;
+     flex-wrap: wrap;
+     height: 10%;
+ }
+ /*Media Card component CSS start*/
 
-/*Media Card component CSS start*/
  .card {
      display: -webkit-flex;
      display: flex;
@@ -47,13 +46,18 @@
      margin-right: auto;
      margin-top: 1em;
      margin-bottom: 1em;
-     padding-top: 1em;
+     /* padding-top: 1em;
      padding-left: 1em;
-     padding-right: 1em;
-     width: 20%;
+     padding-right: 1em; */
+     width: 22%;
      height: 20%;
      background-color: white;
-     box-shadow: 0.0625em 0.0625em 0.125em #666666;
+     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .card:hover {
+     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+     transition-duration: 0.3s;
  }
 
  .card_title {
@@ -62,6 +66,8 @@
      font: 200 35px/1.2 'Istok Web', Verdana, Helvetica, sans-serif;
      font-size: 1.25em;
      padding-top: 0.125em;
+     padding-left: 1em;
+     padding-right: 1em;
      border-top: 0.0625em solid #8D59DB;
      margin-bottom: 1em;
  }
@@ -77,12 +83,13 @@
  }
 
  .card_desc {
-   /*TODO: Edit font.*/
-   order: 3;
-   font: 400 16px/1.6 'Lora', Georgia, serif;
-   padding-top: 0.5em;
-   padding-bottom: 1em;
-
+     /*TODO: Edit font.*/
+     order: 3;
+     font: 400 16px/1.6 'Lora', Georgia, serif;
+     padding-top: 0.5em;
+     padding-bottom: 1em;
+     padding-left: 1em;
+     padding-right: 1em;
  }
 
  .card_button {
@@ -91,14 +98,18 @@
  }
 
  .card_button button {
-   width: 100%;
-   height: 2.5em;
-   background-color: #6E3ABA;
-   color: #fff;
-   border: none;
+     width: 100%;
+     height: 2.5em;
+     background-color: #6E3ABA;
+     color: #fff;
+     border: none;
+ }
+
+ .card_button button:hover {
+     box-shadow: inset 0 3px 4px 0 rgba(0, 0, 0, 0.24), inset 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+     transition-duration: 0.2s;
  }
  /*Media Card component CSS end*/
-
 
  a:link {
      text-decoration: none;
