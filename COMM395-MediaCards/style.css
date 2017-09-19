@@ -1,14 +1,11 @@
  @charset "UTF-8";
+
  body {
      background-image: url("images/test.png");
  }
 
  span {
      font: 400 70px/1.2 'Istok Web', Verdana, Helvetica, sans-serif
- }
-
- p {
-     font: 400 16px/1.6 'Lora', Georgia, serif;
  }
 
  .container {
@@ -34,23 +31,14 @@
      background-color: white;
  }
 
- section_title {
-     font: 200 35px/1.2 'Istok Web', Verdana, Helvetica, sans-serif;
-     margin-left: 2%;
-     padding-top: 0.125em;
- }
+ .row {
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: wrap;
+      height: 10%;
+  }
 
- .text_box {
-     margin-top: 5%;
-     margin-left: auto;
-     margin-right: auto;
-     padding: 5em;
-     width: 30%;
-     border-bottom: 0.125em solid #8D59DB;
-     background-color: white;
-     box-shadow: 0.125em 0.125em 0.25em #000000;
- }
-
+/*Media Card component CSS start*/
  .card {
      display: -webkit-flex;
      display: flex;
@@ -59,19 +47,20 @@
      margin-right: auto;
      margin-top: 1em;
      margin-bottom: 1em;
-     padding: 1em;
-     width: 15%;
+     padding-top: 1em;
+     padding-left: 1em;
+     padding-right: 1em;
+     width: 20%;
      height: 20%;
-     border-bottom: 0.125em solid #8D59DB;
      background-color: white;
-     box-shadow: 0.125em 0.125em 0.25em #000000;
+     box-shadow: 0.0625em 0.0625em 0.125em #666666;
  }
 
  .card_title {
      order: 2;
      align-items: flex-start;
      font: 200 35px/1.2 'Istok Web', Verdana, Helvetica, sans-serif;
-     font-size: 1em;
+     font-size: 1.25em;
      padding-top: 0.125em;
      border-top: 0.0625em solid #8D59DB;
      margin-bottom: 1em;
@@ -80,8 +69,6 @@
  .card_image {
      order: 1;
      align-items: center;
-     /* margin-left: auto;
-    margin-right: auto; */
  }
 
  .card_image img {
@@ -89,22 +76,29 @@
      max-height: 100%;
  }
 
+ .card_desc {
+   /*TODO: Edit font.*/
+   order: 3;
+   font: 400 16px/1.6 'Lora', Georgia, serif;
+   padding-top: 0.5em;
+   padding-bottom: 1em;
+
+ }
+
  .card_button {
-     order: 3;
-     margin-left: auto;
-     margin-right: auto;
+     order: 4;
+     width: 100%;
  }
 
- .row {
-     display: -webkit-flex;
-     display: flex;
-     height: 10%;
+ .card_button button {
+   width: 100%;
+   height: 2.5em;
+   background-color: #6E3ABA;
+   color: #fff;
+   border: none;
  }
+ /*Media Card component CSS end*/
 
- .title_border {
-     border-bottom: 0.125em solid #8D59DB;
-     margin-bottom: 1em;
- }
 
  a:link {
      text-decoration: none;
