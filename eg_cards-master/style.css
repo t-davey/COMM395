@@ -6,19 +6,6 @@ body {
   margin: 0 auto;  /*-- centers the whole body --*/
   font-family: 'Montserrat', sans-serif;  /*-- sets font and fallback --*/
 }
-figure {
-  margin: 0 0 1em 0;  /*-- adds bottom margin to figures --*/
-  padding: 0;  /*-- removes padding from figures --*/
-}
-img {
-  width: 100%;  /*-- makes all images responsive --*/
-}
-a {
-  color:blue;  /*-- sets all link colors --*/
-}
-a:hover, a:visited {
-  color:purple;  /*-- sets all links colors when hover or visited --*/
-}
 nav {
   border: 1px solid #333;  /*-- adds a border to nav --*/
   margin-bottom: 4em;  /*-- adds big bottom margin --*/
@@ -57,15 +44,16 @@ footer {
 }
 /*-- DOCUMENT STYLES --*/
 .container {
-  display: flex; /*-- sets grid container display to flex --*/
+  display: flex; /*-- sets container display to flex --*/
   flex-wrap: wrap;  /*-- allows flex item children to wrap --*/
   flex-direction: row;  /*-- arranges flex item children in a row --*/
 }
 .cards-item {
-  display: flex;  /*-- sets card container display to flex --*/
+  display: flex;  /*-- sets card display to flex --*/
   flex-direction: column;  /*-- arranges flex item children in a column --*/
   padding: 2rem .5rem;  /*-- bigger padding top and bottom, a little left and right --*/
 }
+/*-- MEDIA QUERIES FOR RESPONSIVE DESIGN --*/
 @media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
   .cards-item {width: 50%;} /*-- sets card width to half of the page --*/
 }
@@ -76,7 +64,7 @@ footer {
   .cards-item {width: 25%;} /*-- sets card width to one-quarter of the page --*/
 }
 .card {
-  border: 1px solid #dadada;
+  border: 1px solid #dadada; /*-- adds a border around card items --*/
 }
 .card-image { /*-- general styles for card images --*/
   background-size: cover;  /*-- sets images size to cover --*/
@@ -104,15 +92,39 @@ footer {
   padding: .5rem;  /*-- a little internal space --*/
 }
 /*-- IMAGE BACKGROUNDS --*/
-.fence {
-  background-image: url('pix/fence.jpg');
+.random1 {
+  background-image: url('https://unsplash.it/800/600/?image=71');
 }
-.flowers {
-  background-image: url('pix/flowers.jpg');
+.random2 {
+  background-image: url('https://unsplash.it/800/600/?image=81');
 }
-.record {
-  background-image: url('pix/record.jpg');
+.random3 {
+  background-image: url('https://unsplash.it/800/600/?image=91');
 }
-.river {
-  background-image: url('pix/river.jpg');
+.random4 {
+  background-image: url('https://unsplash.it/800/600/?image=63');
+}
+.random5 {
+  background-image: url('https://unsplash.it/800/600/?image=99');
+}
+.random6 {
+  background-image: url('https://unsplash.it/800/600/?image=88');
+}
+.random7 {
+  background-image: url('https://unsplash.it/800/600/?image=77');
+}
+.random8 {
+  background-image: url('https://unsplash.it/800/600/?image=66');
+}
+.random9 {
+  background-image: url('https://unsplash.it/800/600/?image=55');
+}
+.random10 {
+  background-image: url('https://unsplash.it/800/600/?image=11');
+}
+.random11 {
+  background-image: url('https://unsplash.it/800/600/?image=33');
+}
+.random12 {
+  background-image: url('https://unsplash.it/800/600/?image=22');
 }
