@@ -16,12 +16,16 @@ body {
 .header_text {
   padding-bottom: 0.5em;
   padding-top: 0.5em;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 48px;
+  /* font-family: 'Open Sans', sans-serif;
+  font-size: 48px; */
+  Font-Family: 'Roboto Condensed', Sans-Serif;
+  Font-Size: 48px;
+  color: #222;
+  
 }
 
 .header {
-  width: 100%;
+  width: 40%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -125,7 +129,8 @@ body {
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;
-  border-top: 0.125em solid #8D59DB;
+  color: #222;
+  border-top: 0.125em solid #A6192E;
 }
 
 @media screen and (min-width: 550px) {
@@ -153,15 +158,13 @@ body {
 }
 
 a:link {
-  text-decoration: none;
-  color: #444444;
+  color: #222;
 }
 
 a:visited {
-  text-decoration: none;
+  color: #222;
 }
 
 a:hover {
-  text-decoration: none;
   opacity: 0.75;
 }
