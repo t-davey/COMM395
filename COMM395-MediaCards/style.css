@@ -62,7 +62,7 @@ span {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0.125em;
   height: 20%;
 }
 
@@ -75,7 +75,7 @@ span {
   padding-top: 0.125em;
   padding-left: 0.5em;
   border-top: 0.0625em solid #A100FF;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .card_image {
@@ -94,8 +94,7 @@ span {
   Font-Family: 'Cabin', Sans-Serif;
   Font-Size: 16px;
   color: #555;
-  padding-top: 0.5em;
-  padding-bottom: 1em;
+  padding-bottom: 1.5em;
   padding-left: 1em;
   padding-right: 1em;
 }
