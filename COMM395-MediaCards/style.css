@@ -39,6 +39,7 @@ span {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   height: 10%;
 }
 
@@ -46,7 +47,7 @@ span {
 
 .card_container {
   padding: 0 1em;
-  margin: 1em;
+  margin: 2em;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
   background-color: #fff;
 }
