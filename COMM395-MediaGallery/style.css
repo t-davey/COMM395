@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/background.png");
+}
+
+/*--Grid Rules--*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /*-- sets the columns to 1 at smallest screen sizes --*/
+  grid-template-rows: auto; /*-- auto numbering of rows --*/
+  grid-gap: 2em 1em; /*-- sets top-bottom and left-right space between grid cells --*/
+}
+
+@media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
+  .container {grid-template-columns: repeat(2, 1fr);} /*-- increases column count to 2--*/
+  .card_container:first-child {grid-column: 1/ span 2;} /*-- allow first item to span 2 cells when screen is larger--*/
+}
+@media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
+  .container {grid-template-columns: repeat(3, 1fr);} /*-- increase column count to 3 --*/
+}
+@media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
+  .container {grid-template-columns: repeat(4, 1fr);} /*-- increase column count to 4 --*/
+}
+/*--End Grid Rules--*/
+
+
+/*--Card Rules--*/
+.card_container {
+  position: relative;
+  padding: 1em;
+  margin: 2em;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+  background-color: #afaeac;
+}
+
+.card_container:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.3s;
+}
+
+.card {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  order: 2;
+  align-items: flex-start;
+  Font-Family: 'Roboto Condensed', Sans-Serif;
+  Font-Size: 35px;
+  font-size: 1.25em;
+  color: #222;
+  padding-top: 0.125em;
+  padding-left: 0.5em;
+  border-top: 0.0625em solid #A6192E;
+  margin-bottom: 0.5em;
+}
+
+.card_image {
+  order: 1;
+  align-items: center;
+}
+
+.card_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card_video {
+
+}
+
+.card_desc {
+  order: 3;
+  Font-Family: 'Cabin', Sans-Serif;
+  Font-Size: 16px;
+  color: #333;
+  padding-bottom: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.card_button {
+  order: 4;
+  width: 100%;
+}
+
+.card_button button {
+  width: 100%;
+  height: 2.5em;
+  background-color: #A6192E;
+  color: #DDD;
+  Font-Family: 'Roboto Condensed', Sans-Serif;
+  Font-Size: 16px;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.card_button button:hover {
+  background-color: #88051a;
+  transition-duration: 0.5s;
+}
+
+.card_button button:active {
+  box-shadow: inset 0 6px 8px 0 rgba(0, 0, 0, 0.24), inset 0 8px 26px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.1s;
+}
+
+.large {
+
+}
+/*--End Card Rules--*/
+
+.footer {
+  width: 85%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #222;
+  border-top: 0.125em solid #A6192E;
+}
+
+a:link {
+  color: #222;
+}
+
+a:visited {
+  color: #222;
+}
+
+a:hover {
+  opacity: 0.75;
+}
