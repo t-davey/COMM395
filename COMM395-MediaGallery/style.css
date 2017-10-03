@@ -6,6 +6,7 @@
 
 body {
   background-image: url("images/background.png");
+  background-attachment: fixed;
 }
 
 /*--Grid Rules--*/
@@ -46,14 +47,17 @@ body {
 }
 
 .card {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr; /*-- sets the columns to 1 at smallest screen sizes --*/
+  grid-template-rows: auto; /*-- auto numbering of rows --*/
+  grid-gap: 2em 1em; /*-- sets top-bottom and left-right space between grid cells --*/
+
 }
 
 .card_title {
-  order: 2;
-  align-items: flex-start;
+  position: absolute;
+  grid-row: 2 / 3;
   Font-Family: 'Roboto Condensed', Sans-Serif;
   Font-Size: 35px;
   font-size: 1.25em;
@@ -65,8 +69,9 @@ body {
 }
 
 .card_image {
-  order: 1;
   align-items: center;
+  position: absolute;
+  grid-row: 1 / 2;
 }
 
 .card_image img {
@@ -79,7 +84,9 @@ body {
 }
 
 .card_desc {
-  order: 3;
+  position: absolute;
+  grid-row: 3 / 4;
+
   Font-Family: 'Cabin', Sans-Serif;
   Font-Size: 16px;
   color: #333;
@@ -89,7 +96,8 @@ body {
 }
 
 .card_button {
-  order: 4;
+  position: absolute;
+  grid-row: 4 / 5;
   width: 100%;
 }
 
