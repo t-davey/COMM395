@@ -16,6 +16,11 @@ body {
     background-attachment: fixed;
 }
 
+.header {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .container {
     display: grid;
 }
@@ -71,6 +76,173 @@ body {
 
 /* Media Tags End */
 
+
+/*-- Styles for slideshow --*/
+
+.slideshow-wrapper {
+    position: relative;
+    /*-- this allows children to be position absolutely --*/
+    margin: auto;
+    /*-- simple centering method--*/
+    margin-top: 2em;
+    /*-- adds space above--*/
+    width: 1440px;
+    /*-- contrains slideshow on largest screens --*/
+    background-color: #222;
+
+  }
+  
+  .slideshow-wrapper img {
+    width: 100%;
+    /*-- makes slideshow responsive in size --*/
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    /*-- changes hover cursor to the hand --*/
+    position: absolute;
+    /*-- positions arrows absolutely--*/
+    top: 50%;
+    /*-- positions arrows half the height of parent from top --*/
+    width: auto;
+    /*-- matches width of parent --*/
+    padding: 16px;
+    /*-- adds a little bit of space--*/
+    margin-top: -22px;
+    /*-- adjusts position by height of arrows --*/
+    color: white;
+    /*-- sets color for contrast --*/
+    font-weight: bold;
+    /*-- selects heavier font --*/
+    font-size: 18px;
+    /*-- sets arrow font size --*/
+    transition: 0.6s ease;
+    /*-- sets transition speed for arrow hover--*/
+    border-radius: 0 3px 3px 0;
+    /*-- slightly rounds inside borders --*/
+  }
+  
+  .next {
+    right: 0;
+    /*-- positions next arrow hard right --*/
+    border-radius: 3px 0 0 3px;
+    /*-- rounds the outside borders --*/
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /*-- gives a background for contrast on hover --*/
+  }
+  
+  .text-center {
+    text-align: center;
+    /*-- aligns indicators center --*/
+  }
+  
+  .captiontext {
+    background: rgba(0, 0, 0, 0.8);
+    color: #f2f2f2;
+    /*-- sets color to almost white --*/
+    font-size: 22px;
+    /*-- sets font size --*/
+    padding: 8px 12px;
+    /*-- sets caption padding --*/
+    position: absolute;
+    /*-- positions caption text absolutely--*/
+    bottom: 8px;
+    /*-- sets position 8px from bottom --*/
+    width: 100%;
+    /*-- sets width equal to container width --*/
+    text-align: center;
+    /*-- aligns text center --*/
+  }
+  
+  .numberof {
+    color: #f2f2f2;
+    /*-- sets color to almost white --*/
+    font-size: 12px;
+    /*-- sets font size --*/
+    padding: 8px 12px;
+    /*-- sets numberof padding --*/
+    position: absolute;
+    /*-- positions numberof text absolutely--*/
+    top: 0;
+    /*-- sets position hard to the top--*/
+  }
+  
+  .indicator {
+    cursor: pointer;
+    /*-- changes hover cursor to the hand --*/
+    height: 13px;
+    /*-- sets height of dots --*/
+    width: 13px;
+    /*-- sets width of dots --*/
+    margin: 0 2px;
+    /*-- adds margin between dots --*/
+    background-color: #bbb;
+    /*-- sets background color to light gray --*/
+    border-radius: 50%;
+    /*-- makes dots fully round --*/
+    display: inline-block;
+    /*-- displays in a horizontal line --*/
+    transition: background-color 0.6s ease;
+    /*-- allows background change to take time --*/
+  }
+  
+  .active,
+  .indicator:hover {
+    background-color: #717171;
+    /*-- changes background color on hover/active to darker gray  --*/
+  }
+  
+  
+  /* Fading animation */
+  
+  .fade {
+    -webkit-animation-name: fade;
+    /*-- webkit prefix  --*/
+    -webkit-animation-duration: 1.5s;
+    /*-- webkit prefix --*/
+    animation-name: fade;
+    /*-- defines which animation to use --*/
+    animation-duration: 1.5s;
+    /*-- sets the duration --*/
+  }
+  
+  @-webkit-keyframes fade {
+    /*-- webkit prefix --*/
+    from {
+      opacity: .6
+    }
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes fade {
+    /*-- sets "fade" animation properties --*/
+    from {
+      opacity: .6
+    }
+    /*-- sets start of animation --*/
+    to {
+      opacity: 1
+    }
+    /*-- sets end of animation --*/
+  }
+  
+  
+  /* On smaller screens, decrease text size */
+  
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
 
 /*Media Card component CSS start*/
 
