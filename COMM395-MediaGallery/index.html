@@ -2,356 +2,424 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Media Cards</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/f2812e0a99.js"></script>
+
+
 </head>
 
-<body>
+<body id="page">
 
-  <div id="page">
+    <div class="header">
+        <img src="images/atlanta.png">
+    </div>
+
+    <div class="slideshow-wrapper">
+        <div class="slide fade">
+            <div class="numberof">1 of 4</div>
+            <img src="images/atlanta_banner.png" />
+            <div class="captiontext">Atlanta, Georgia skyline.</div>
+        </div>
+        <!-- end .slide.fade -->
+        <div class="slide fade">
+            <div class="numberof">2 of 4</div>
+            <img src="images/migos_banner.jpg" />
+            <div class="captiontext">Migos (Offset, Quavo, and Takeoff) performing.</div>
+        </div>
+        <!-- end .slide.fade -->
+        <div class="slide fade">
+            <div class="numberof">3 of 4</div>
+            <img src="images/2chainz_banner.jpg" />
+            <div class="captiontext">2 Chainz posing with six chains.</div>
+        </div>
+        <!-- end .slide.fade -->
+        <div class="slide fade">
+            <div class="numberof">4 of 4</div>
+            <img src="images/gucci_mane_hamburger.jpg" />
+            <div class="captiontext">Gucci Mane poses with a pile of hamburgers in a mansion before being sent to federal prison (~2012).</div>
+        </div>
+        <!-- end .slide.fade -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;
+            <!--unicode for less-than-sign-->
+        </a>
+        <a class="next" onclick="plusSlides(1)">&#10095;
+            <!--unicode for greater-than-sign-->
+        </a>
+    </div>
+    <!--end slideshow-wrapper-->
+    <br>
+    <div class="text-center">
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+        <span class="indicator" onclick="currentSlide(3)"></span>
+        <span class="indicator" onclick="currentSlide(4)"></span>
+    </div>
+
 
     <div class="container">
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="https://www.unsplash.it/800/600" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Video Box</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Radric Delantic Davis (born February 12, 1980), known by his stage name Gucci Mane, is an American rapper.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Gucci_Mane">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Video Card Container -->
+        <div class="card_container">
+            <div class="card">
+                <div class="card_video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KCil-kLGkvc?start=19" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/guccimane.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Gucci Mane</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Radric Delantic Davis (born February 12, 1980), known by his stage name Gucci Mane, is an American rapper.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Gucci_Mane">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/guccimane.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Gucci Mane</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Radric Delantic Davis (born February 12, 1980), known by his stage name Gucci Mane, is an American rapper.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Gucci_Mane">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/waka.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Waka Flocka Flame</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Juaquin James Malphurs (born May 31, 1986), better known as Waka Flocka Flame or simply Waka Flocka, is an American rapper.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Waka_Flocka_Flame">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/waka.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Waka Flocka Flame</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Juaquin James Malphurs (born May 31, 1986), better known as Waka Flocka Flame or simply Waka Flocka, is an American rapper.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Waka_Flocka_Flame">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/ti.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>T.I.</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Clifford Joseph Harris Jr. (born September 25, 1980), known professionally as T.I., is an American rapper and actor.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/T.I.">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/ti.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>T.I.</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Clifford Joseph Harris Jr. (born September 25, 1980), known professionally as T.I., is an American rapper and actor.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/T.I.">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images\future.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Future</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Nayvadius DeMun Wilburn (born November 20, 1983), known as Future, is an American rapper, songwriter, and record producer.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Future_(rapper)">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images\future.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Future</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Nayvadius DeMun Wilburn (born November 20, 1983), known as Future, is an American rapper, songwriter, and record producer.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Future_(rapper)">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/21savage.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>21 Savage</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Shayaa Bin Abraham-Joseph (born October 22, 1992), better known by his stage name 21 Savage, is an American rapper.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/21_Savage">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/21savage.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>21 Savage</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Shayaa Bin Abraham-Joseph (born October 22, 1992), better known by his stage name 21 Savage, is an American rapper.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/21_Savage">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/youngthug.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Young Thug</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Jeffery Lamar Williams (born August 16, 1991), best known professionally as Young Thug, is an American hip hop artist.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Young_Thug">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/youngthug.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Young Thug</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Jeffery Lamar Williams (born August 16, 1991), best known professionally as Young Thug, is an American hip hop artist.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Young_Thug">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/migos.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Migos</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Migos is an American hip hop trio from Lawrenceville, Georgia, formed in 2009 and consists of Quavo, Offset, and Takeoff.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Migos">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/migos.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Migos</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Migos is an American hip hop trio from Lawrenceville, Georgia, formed in 2009 and consists of Quavo, Offset, and Takeoff.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Migos">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/quan.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Rich Homie Quan</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Dequantes Devontay Lamar (born October 4, 1989), also known as Rich Homie Quan, is an American singer, rapper and songwriter.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Rich_Homie_Quan">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/quan.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Rich Homie Quan</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Dequantes Devontay Lamar (born October 4, 1989), also known as Rich Homie Quan, is an American singer, rapper and songwriter.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Rich_Homie_Quan">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/yachty.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Lil Yachty</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Miles Parks McCollum (born August 23, 1996), better known by his stage name Lil Yachty, is an American rapper and singer.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Lil_Yachty">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/yachty.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Lil Yachty</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Miles Parks McCollum (born August 23, 1996), better known by his stage name Lil Yachty, is an American rapper and singer.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Lil_Yachty">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/carti.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Playboi Carti</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Jordan Terrell Carter (born September 13, 1996), better known by his stage name Playboi Carti, is an American rapper and
-            songwriter.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Playboi_Carti">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/carti.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Playboi Carti</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Jordan Terrell Carter (born September 13, 1996), better known by his stage name Playboi Carti, is an American rapper and
+                    songwriter.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Playboi_Carti">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/shawtylo.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>Shawty Lo</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Carlos Rico Walker (March 22, 1976 – September 21, 2016), known professionally as Shawty Lo, was an American rapper.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Shawty_Lo">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/shawtylo.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>Shawty Lo</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Carlos Rico Walker (March 22, 1976 – September 21, 2016), known professionally as Shawty Lo, was an American rapper.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Shawty_Lo">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Media Card Container -->
-      <div class="card_container">
-        <!-- Media Card -->
-        <div class="card">
-          <!-- Image -->
-          <div class="card_image">
-            <img src="images/oj.jpg" />
-          </div>
-          <!-- Title -->
-          <div class="card_title">
-            <strong>OJ Da Juiceman</strong>
-          </div>
-          <!-- Description -->
-          <div class="card_desc">
-            Otis Williams Jr. (born November 23, 1981), known by his stage name OJ Da Juiceman, is an American rapper, actor and songwriter.
-          </div>
-          <!-- Button -->
-          <div class="card_button">
-            <a href="https://en.wikipedia.org/wiki/Rae_Sremmurd">
-              <button type="button">Learn more at <i class="fa fa-wikipedia-w"></i></button>
-            </a>
-          </div>
+        <!-- Media Card Container -->
+        <div class="card_container">
+            <!-- Media Card -->
+            <div class="card">
+                <!-- Image -->
+                <div class="card_image">
+                    <img src="images/oj.jpg" />
+                </div>
+                <!-- Title -->
+                <div class="card_title">
+                    <strong>OJ Da Juiceman</strong>
+                </div>
+                <!-- Description -->
+                <div class="card_desc">
+                    Otis Williams Jr. (born November 23, 1981), known by his stage name OJ Da Juiceman, is an American rapper, actor and songwriter.
+                </div>
+                <!-- Button -->
+                <div class="card_button">
+                    <a href="https://en.wikipedia.org/wiki/Rae_Sremmurd">
+                        <button type="button">Learn more at
+                            <i class="fa fa-wikipedia-w"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="copyright">&copy;2017 -
+            <strong>Travis Davey</strong>
+        </div>
+        <a href="https://github.com/t-davey/COMM395" target="_blank">www.github.com/t-davey/COMM395</a>
+    </footer>
+
+    <script src="slideshow.js" type="text/javascript"></script>
 
 
     </div>
-
-  </div>
-
-  <footer class="footer">
-    <div class="copyright">&copy;2017 - <strong>Travis Davey</strong></div>
-    <a href="https://github.com/t-davey/COMM395" target="_blank">www.github.com/t-davey/COMM395</a>
-  </footer>
 
 </body>
 

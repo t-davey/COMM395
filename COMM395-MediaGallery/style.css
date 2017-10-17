@@ -1,150 +1,342 @@
 @charset "UTF-8";
+*,
+*::after {
+    box-sizing: border-box;
+}
 
-*, *::after {
-  box-sizing: border-box;
+#page {
+    width: 85%;
+    /*-- restricts page width --*/
+    margin: 0 auto;
+    /*-- uses auto margin to center everything --*/
 }
 
 body {
-  background-image: url("images/background.png");
-  background-attachment: fixed;
+    background-image: url("images/background.png");
+    background-attachment: fixed;
 }
 
-/*--Grid Rules--*/
+.header {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .container {
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr; /*-- sets the columns to 1 at smallest screen sizes --*/
-  grid-template-rows: auto; /*-- auto numbering of rows --*/
-  grid-gap: 2em 1em; /*-- sets top-bottom and left-right space between grid cells --*/
+    display: grid;
 }
 
-@media screen and (min-width: 550px) {  /*-- for screens above 550px  --*/
-  .container {grid-template-columns: repeat(2, 1fr);} /*-- increases column count to 2--*/
-  .card_container:first-child {grid-column: 1/ span 2;} /*-- allow first item to span 2 cells when screen is larger--*/
+.footer {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    color: #222;
+    border-top: 0.125em solid #FF2070;
 }
-@media screen and (min-width: 1024px) { /*-- for screens above 1024px  --*/
-  .container {grid-template-columns: repeat(3, 1fr);} /*-- increase column count to 3 --*/
-}
-@media screen and (min-width: 1280px) { /*-- for screens above 1280px  --*/
-  .container {grid-template-columns: repeat(4, 1fr);} /*-- increase column count to 4 --*/
-}
-/*--End Grid Rules--*/
 
 
-/*--Card Rules--*/
+/* Media Tags Start */
+
+@media screen and (min-width: 550px) {
+    /*-- for screens above 550px  --*/
+    .container {
+        grid-template-columns: repeat(2, 1fr);        
+    }
+    /*-- increases column count to 2--*/
+    .card_container:first-child {
+        grid-column: 1/ span 2;
+        grid-row: 1/ span 2;
+    }
+    /*-- allow first item to span 2 cells when screen is larger--*/
+
+}
+
+@media screen and (min-width: 1024px) {
+    /*-- for screens above 1024px  --*/
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*-- increase column count to 3 --*/
+    .card_container:first-child {
+        grid-column: 1/ span 2;
+        grid-row: 1;
+    }
+    /*-- allow first item to span 2 cells when screen is larger--*/
+}
+
+@media screen and (min-width: 1280px) {
+    /*-- for screens above 1280px  --*/
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /*-- increase column count to 4 --*/
+}
+
+
+/* Media Tags End */
+
+
+/*-- Styles for slideshow --*/
+
+.slideshow-wrapper {
+    position: relative;
+    /*-- this allows children to be position absolutely --*/
+    margin: auto;
+    /*-- simple centering method--*/
+    margin-top: 2em;
+    /*-- adds space above--*/
+    width: 1440px;
+    /*-- contrains slideshow on largest screens --*/
+    background-color: #222;
+
+  }
+  
+  .slideshow-wrapper img {
+    width: 100%;
+    /*-- makes slideshow responsive in size --*/
+  }
+
+  .prev,
+  .next {
+    cursor: pointer;
+    /*-- changes hover cursor to the hand --*/
+    position: absolute;
+    /*-- positions arrows absolutely--*/
+    top: 50%;
+    /*-- positions arrows half the height of parent from top --*/
+    width: auto;
+    /*-- matches width of parent --*/
+    padding: 16px;
+    /*-- adds a little bit of space--*/
+    margin-top: -22px;
+    /*-- adjusts position by height of arrows --*/
+    color: white;
+    /*-- sets color for contrast --*/
+    font-weight: bold;
+    /*-- selects heavier font --*/
+    font-size: 18px;
+    /*-- sets arrow font size --*/
+    transition: 0.6s ease;
+    /*-- sets transition speed for arrow hover--*/
+    border-radius: 0 3px 3px 0;
+    /*-- slightly rounds inside borders --*/
+  }
+  
+  .next {
+    right: 0;
+    /*-- positions next arrow hard right --*/
+    border-radius: 3px 0 0 3px;
+    /*-- rounds the outside borders --*/
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /*-- gives a background for contrast on hover --*/
+  }
+  
+  .text-center {
+    text-align: center;
+    /*-- aligns indicators center --*/
+  }
+  
+  .captiontext {
+    background: rgba(0, 0, 0, 0.8);
+    color: #f2f2f2;
+    /*-- sets color to almost white --*/
+    font-size: 22px;
+    /*-- sets font size --*/
+    padding: 8px 12px;
+    /*-- sets caption padding --*/
+    position: absolute;
+    /*-- positions caption text absolutely--*/
+    bottom: 8px;
+    /*-- sets position 8px from bottom --*/
+    width: 100%;
+    /*-- sets width equal to container width --*/
+    text-align: center;
+    /*-- aligns text center --*/
+  }
+  
+  .numberof {
+    color: #f2f2f2;
+    /*-- sets color to almost white --*/
+    font-size: 12px;
+    /*-- sets font size --*/
+    padding: 8px 12px;
+    /*-- sets numberof padding --*/
+    position: absolute;
+    /*-- positions numberof text absolutely--*/
+    top: 0;
+    /*-- sets position hard to the top--*/
+  }
+  
+  .indicator {
+    cursor: pointer;
+    /*-- changes hover cursor to the hand --*/
+    height: 13px;
+    /*-- sets height of dots --*/
+    width: 13px;
+    /*-- sets width of dots --*/
+    margin: 0 2px;
+    /*-- adds margin between dots --*/
+    background-color: #bbb;
+    /*-- sets background color to light gray --*/
+    border-radius: 50%;
+    /*-- makes dots fully round --*/
+    display: inline-block;
+    /*-- displays in a horizontal line --*/
+    transition: background-color 0.6s ease;
+    /*-- allows background change to take time --*/
+  }
+  
+  .active,
+  .indicator:hover {
+    background-color: #717171;
+    /*-- changes background color on hover/active to darker gray  --*/
+  }
+  
+  
+  /* Fading animation */
+  
+  .fade {
+    -webkit-animation-name: fade;
+    /*-- webkit prefix  --*/
+    -webkit-animation-duration: 1.5s;
+    /*-- webkit prefix --*/
+    animation-name: fade;
+    /*-- defines which animation to use --*/
+    animation-duration: 1.5s;
+    /*-- sets the duration --*/
+  }
+  
+  @-webkit-keyframes fade {
+    /*-- webkit prefix --*/
+    from {
+      opacity: .6
+    }
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes fade {
+    /*-- sets "fade" animation properties --*/
+    from {
+      opacity: .6
+    }
+    /*-- sets start of animation --*/
+    to {
+      opacity: 1
+    }
+    /*-- sets end of animation --*/
+  }
+  
+  
+  /* On smaller screens, decrease text size */
+  
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px
+    }
+  }
+
+/*Media Card component CSS start*/
+
 .card_container {
-  position: relative;
-  padding: 1em;
-  margin: 2em;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
-  background-color: #afaeac;
+    position: relative;
+    padding: 1em;
+    margin: 2em;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 4px 13px 0 rgba(0, 0, 0, 0.19);
+    background-color: #DEDEDE;
 }
 
 .card_container:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  transition-duration: 0.3s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.3s;
 }
 
 .card {
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr; /*-- sets the columns to 1 at smallest screen sizes --*/
-  grid-template-rows: auto; /*-- auto numbering of rows --*/
-  grid-gap: 2em 1em; /*-- sets top-bottom and left-right space between grid cells --*/
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    min-height: 100%;
 
 }
 
 .card_title {
-  position: absolute;
-  grid-row: 2 / 3;
-  Font-Family: 'Roboto Condensed', Sans-Serif;
-  Font-Size: 35px;
-  font-size: 1.25em;
-  color: #222;
-  padding-top: 0.125em;
-  padding-left: 0.5em;
-  border-top: 0.0625em solid #A6192E;
-  margin-bottom: 0.5em;
+    position: relative;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 35px;
+    font-size: 1.25em;
+    color: #222;
+    padding-top: 0.125em;
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 0.0625em solid #F64B13;
+    
 }
 
 .card_image {
-  align-items: center;
-  position: absolute;
-  grid-row: 1 / 2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    position: relative;
+    align-items: center;
 }
 
 .card_image img {
-  max-width: 100%;
-  max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.card_video {
-
+.card_video iframe {
+    height: 100%;
+    width: 100%;
 }
 
 .card_desc {
-  position: absolute;
-  grid-row: 3 / 4;
-
-  Font-Family: 'Cabin', Sans-Serif;
-  Font-Size: 16px;
-  color: #333;
-  padding-bottom: 1.5em;
-  padding-left: 1em;
-  padding-right: 1em;
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+    position: relative;
+    Font-Family: 'Cabin', Sans-Serif;
+    Font-Size: 16px;
+    color: #333;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .card_button {
-  position: absolute;
-  grid-row: 4 / 5;
-  width: 100%;
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+    width: 100%;
 }
 
 .card_button button {
-  width: 100%;
-  height: 2.5em;
-  background-color: #A6192E;
-  color: #DDD;
-  Font-Family: 'Roboto Condensed', Sans-Serif;
-  Font-Size: 16px;
-  border: none;
-  border-radius: 0.5em;
+    width: 100%;
+    height: 2.5em;
+    background-color: #0092BE;
+    color: #DDD;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
+    Font-Size: 16px;
+    border: none;
+    border-radius: 0.5em;
 }
 
 .card_button button:hover {
-  background-color: #88051a;
-  transition-duration: 0.5s;
+    background-color: #008F90;
+    transition-duration: 0.5s;
 }
 
 .card_button button:active {
-  box-shadow: inset 0 6px 8px 0 rgba(0, 0, 0, 0.24), inset 0 8px 26px 0 rgba(0, 0, 0, 0.19);
-  transition-duration: 0.1s;
+    box-shadow: inset 0 6px 8px 0 rgba(0, 0, 0, 0.24), inset 0 8px 26px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.1s;
 }
 
-.large {
 
-}
-/*--End Card Rules--*/
-
-.footer {
-  width: 85%;
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: #222;
-  border-top: 0.125em solid #A6192E;
-}
-
-a:link {
-  color: #222;
-}
-
-a:visited {
-  color: #222;
-}
-
-a:hover {
-  opacity: 0.75;
-}
+/*Media Card component CSS end*/
