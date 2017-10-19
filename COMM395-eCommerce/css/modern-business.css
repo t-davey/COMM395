@@ -13,7 +13,6 @@ body {
 
 body {
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    
 }
 
 .img-portfolio {
@@ -24,8 +23,9 @@ body {
     opacity: 0.8;
 }
 
+/* Navbar Styles */
 .navbar {
-    background-color: #fff;
+    background-color: #52B7D5;
     height: 5.5em;
 }
 
@@ -50,6 +50,22 @@ header.carousel .fill {
     height: 100%;
     background-position: center;
     background-size: cover;
+}
+
+/* Triple Box Section */
+.panel-primary .panel-heading{
+  background-color: #52B7D5;
+  color: #333;
+}
+
+.btn-info {
+  color: #333;
+}
+
+/* Product Gallery Styles*/
+.gallery_img {
+  max-width: 300px;
+  max-height: 300px;
 }
 
 /* 404 Page Styles */
