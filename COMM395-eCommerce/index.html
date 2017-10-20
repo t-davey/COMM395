@@ -37,27 +37,28 @@
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="index.html">
-                    <img class="nav_logo" src="images/wide_small.png"/>
-                </a>
+          <img class="nav_logo" src="images/wide_small2.png" />
+        </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <!-- TODO: Move buttons down and fix size. -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="about.html">About</a>
+            <a href="about.html" id="nav-button">About</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" id="nav-button">Contact</a>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" id="nav-button" data-toggle="dropdown">Services
+              <b class="caret"></b>
+            </a>
             <ul class="dropdown-menu">
               <li>
                 <a href="portfolio-1-col.html">Residential Systems</a>
@@ -69,7 +70,9 @@
           </li>
           <li>
             <!-- TODO: Fix text font change with FA -->
-            <a href="contact.html"><i class="fa fa-shopping-cart"> $0.00</i></a>
+            <a href="contact.html" id="nav-button">
+              <i class="fa fa-shopping-cart"></i> $0.00
+            </a>
           </li>
         </ul>
       </div>
@@ -111,11 +114,11 @@
 
     <!-- Controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
+      <span class="icon-prev"></span>
+    </a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
+      <span class="icon-next"></span>
+    </a>
   </header>
 
   <!-- Page Content -->
@@ -124,9 +127,10 @@
     <!-- Marketing Icons Section -->
     <div class="row">
       <div class="col-lg-12">
-        <h1 class="page-header">
-                    Welcome to Penguin Air
-                </h1>
+        <p class="page-header h1">
+          Welcome to Penguin Air
+          <small>Burr...</small>
+        </p>
       </div>
       <div class="col-md-4">
         <div class="panel panel-primary">
@@ -134,8 +138,9 @@
             <h4>Our history</h4>
           </div>
           <div class="panel-body">
-            <p>Penguin Air was founded by Gregory Smithson after returning to his hometown of Houston, Texas from an expedition to the South Pole. His goal was to create efficient, yet highly effective air conditioners that would make a even a penguin feel
-              comfortable in the Texas heat.</p>
+            <p>Penguin Air was founded by Gregory Smithson after returning to his hometown of Houston, Texas from an expedition
+              to the South Pole. His goal was to create efficient, yet highly effective air conditioners that would make
+              a even a penguin feel comfortable in the Texas heat.</p>
             <a href="#" class="btn btn-info">Learn More</a>
           </div>
         </div>
@@ -143,22 +148,25 @@
       <div class="col-md-4">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+            <h4>The Penguin Promise</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>The Penguin Promise is our promise to all of our customers that we will take any action necessarry to ensure
+              our customer is happy with their purchase. If we are unable to meet a customer's needs, for any reason, we
+              will offer a full refund.</p>
+            <a href="#" class="btn btn-info">Learn More</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+            <h4>What Makes Us Great #3</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-            <a href="#" class="btn btn-default">Learn More</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias
+              at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+            <a href="#" class="btn btn-info">Learn More</a>
           </div>
         </div>
       </div>
@@ -166,42 +174,239 @@
     <!-- /.row -->
 
     <!-- Portfolio Section -->
+    <div class="col-lg-12">
+      <h2 class="page-header">Our Products</h2>
+    </div>
     <div class="row">
-      <div class="col-lg-12">
-        <h2 class="page-header">Our Products</h2>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <a href="portfolio-item.html">
-                    <img class="img-responsive img-thumbnail img-hover gallery_img" src="images/ac1.png" alt="">
-                </a>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <a href="portfolio-item.html">
-                    <img class="img-responsive img-thumbnail img-hover gallery_img" src="images/ac2.png" alt="">
-                </a>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <a href="portfolio-item.html">
-                    <img class="img-responsive img-thumbnail img-hover gallery_img" src="images/ac3.png" alt="">
-                </a>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <a href="portfolio-item.html">
-                    <img class="img-responsive img-thumbnail img-hover gallery_img" src="images/ac4.png" alt="">
-                </a>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <a href="portfolio-item.html">
-                    <img class="img-responsive img-thumbnail img-hover gallery_img" src="images/ac5.png" alt="">
-                </a>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <a href="portfolio-item.html">
-                    <img class="img-responsive img-thumbnail img-hover gallery_img" src="images/ac6.png" alt="">
-                </a>
+      <div class="col-md-12">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" id="item_box">
+            <h4 class="text-center">
+              <span class="label label-info">Adelie</span>
+            </h4>
+            <img src="images/ac1.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <h3>Galaxy S5</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <label>$649.99</label>
+                  </h3>
+                </div>
+              </div>
+              <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-primary btn-product">
+                    <i class="fa fa-shopping-cart"></i> Product Details</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" id="item_box">
+            <h4 class="text-center">
+              <span class="label label-info">Fiordland</span>
+            </h4>
+            <img src="images/ac2.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <h3>iPhone 6</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <label>$749.99</label>
+                  </h3>
+                </div>
+              </div>
+              <p>32GB, 64Bit, 1080HD, 4.7 inches, iOS 8</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-primary btn-product">
+                    <i class="fa fa-shopping-cart"></i> Product Details</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" id="item_box">
+            <h4 class="text-center">
+              <span class="label label-info">Gentoo</span>
+            </h4>
+            <img src="images/ac3.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <h3>Lumia 1520</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <label>$749.00</label>
+                  </h3>
+                </div>
+              </div>
+              <p>32GB, 4GB Ram, 1080HD, 6.3 inches, WP 8</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-primary btn-product">
+                    <i class="fa fa-shopping-cart"></i> Product Details</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+
+              <p> </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" id="item_box">
+            <h4 class="text-center">
+              <span class="label label-info">Emperor</span>
+            </h4>
+            <img src="images/ac4.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <h3>Galaxy S5</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <label>$649.99</label>
+                  </h3>
+                </div>
+              </div>
+              <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-primary btn-product">
+                    <i class="fa fa-shopping-cart"></i> Product Details</a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" id="item_box">
+            <h4 class="text-center">
+              <span class="label label-info">Magellanic</span>
+            </h4>
+            <img src="images/ac5.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <h3>iPhone 6</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <label>$749.99</label>
+                  </h3>
+                </div>
+              </div>
+              <p>32GB, 64Bit, 1080HD, 4.7 inches, iOS 8</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="col-md-6">
+                    <a href="#" class="btn btn-primary btn-product">
+                      <i class="fa fa-shopping-cart"></i> Product Details</a>
+                  </div>
+                  <a href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail" id="item_box">
+            <h4 class="text-center">
+              <span class="label label-info">Rockhopper</span>
+            </h4>
+            <img src="images/ac6.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <h3>Lumia 1520</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <label>$749.00</label>
+                  </h3>
+                </div>
+              </div>
+              <p>32GB, 4GB Ram, 1080HD, 6.3 inches, WP 8</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" href="#" class="btn btn-primary btn-product" data-toggle="modal" data-target="#myModal">
+                    Product Details</button>
+                </div>
+                <div class="col-md-6">
+                  <a href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                </div>
+              </div>
+
+              <p> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Product Modals -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Features Section -->
     <div class="row">
@@ -211,7 +416,8 @@
       <div class="col-md-6">
         <p>The Modern Business template by Start Bootstrap includes:</p>
         <ul>
-          <li><strong>Bootstrap v3.2.0</strong>
+          <li>
+            <strong>Bootstrap v3.2.0</strong>
           </li>
           <li>jQuery v1.11.0</li>
           <li>Font Awesome v4.1.0</li>
@@ -219,7 +425,8 @@
           <li>Unstyled page elements for easy customization</li>
           <li>17 HTML pages</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam
+          totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
       </div>
       <div class="col-md-6">
         <img class="img-responsive" src="http://placehold.it/700x450" alt="">
@@ -233,7 +440,8 @@
     <div class="well">
       <div class="row">
         <div class="col-md-8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae
+            veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
         </div>
         <div class="col-md-4">
           <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>

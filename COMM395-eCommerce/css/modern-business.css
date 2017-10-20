@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 5.5em; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -28,6 +28,12 @@ body {
     background-color: #52B7D5;
     height: 5.5em;
 }
+
+#nav-button {
+    padding: 30px 15px;
+    color: #333;
+    font-size: 1.25em;
+  }
 
 .nav_logo {
     width: 50%;
@@ -53,6 +59,10 @@ header.carousel .fill {
 }
 
 /* Triple Box Section */
+.page-header {
+    border-color: #337AB7;
+}
+
 .panel-primary .panel-heading{
   background-color: #52B7D5;
   color: #333;
@@ -60,12 +70,12 @@ header.carousel .fill {
 
 .btn-info {
   color: #333;
+  border-color: #337AB7;
 }
 
 /* Product Gallery Styles*/
-.gallery_img {
-  max-width: 300px;
-  max-height: 300px;
+#item_box {
+    height: 600px;
 }
 
 /* 404 Page Styles */
