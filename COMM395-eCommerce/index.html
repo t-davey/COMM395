@@ -69,7 +69,6 @@
             </ul>
           </li>
           <li>
-            <!-- TODO: Fix text font change with FA -->
             <a href="contact.html" id="nav-button">
               <i class="fa fa-shopping-cart"></i> $0.00
             </a>
@@ -177,14 +176,18 @@
     <div class="col-lg-12">
       <h2 class="page-header">Our Products</h2>
     </div>
+
     <div class="row">
       <div class="col-md-12">
+        <!-- Item Box Start -->
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" id="item_box">
+          <div class="thumbnail short_item_box">
             <h4 class="text-center">
               <span class="label label-info">Adelie</span>
             </h4>
-            <img src="images/ac1.png" class="img-responsive">
+            <div class="short_img_box">
+              <img src="images/ac1.png" class="img-responsive ">
+            </div>
             <div class="caption">
               <div class="row">
                 <div class="col-md-6 col-xs-6">
@@ -199,24 +202,31 @@
               <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
               <div class="row">
                 <div class="col-md-6">
-                  <a href="#" class="btn btn-primary btn-product">
-                    <i class="fa fa-shopping-cart"></i> Product Details</a>
+                  <button type="button" href="#" class="btn btn-primary btn-product" data-toggle="modal" data-target="#adelie">
+                    <i class="fa fa-shopping-cart"></i> Product Details
+                  </button>
                 </div>
                 <div class="col-md-6">
-                  <a href="#" class="btn btn-success btn-product">
-                    <i class="fa fa-shopping-cart"></i> Buy</a>
+                  <button type="button" href="#" class="btn btn-success btn-product">
+                    <i class="fa fa-shopping-cart"></i> Buy
+                  </button>
                 </div>
               </div>
               <p> </p>
             </div>
           </div>
         </div>
+        <!-- Item Box End -->
+
+        <!-- Item Box Start -->
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" id="item_box">
+          <div class="thumbnail short_item_box">
             <h4 class="text-center">
               <span class="label label-info">Fiordland</span>
             </h4>
-            <img src="images/ac2.png" class="img-responsive">
+            <div class="short_img_box">
+              <img src="images/ac2.png" class="img-responsive ">
+            </div>
             <div class="caption">
               <div class="row">
                 <div class="col-md-6 col-xs-6">
@@ -244,12 +254,17 @@
             </div>
           </div>
         </div>
+        <!-- Item Box End -->
+
+        <!-- Item Box Start -->
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" id="item_box">
+          <div class="thumbnail short_item_box">
             <h4 class="text-center">
               <span class="label label-info">Gentoo</span>
             </h4>
-            <img src="images/ac3.png" class="img-responsive">
+            <div class="short_img_box">
+              <img src="images/ac3.png" class="img-responsive">
+            </div>
             <div class="caption">
               <div class="row">
                 <div class="col-md-6 col-xs-6">
@@ -277,18 +292,22 @@
             </div>
           </div>
         </div>
+        <!-- Item Box End -->
       </div>
     </div>
     <!-- /.row -->
 
     <div class="row">
       <div class="col-md-12">
+        <!-- Item Box Start -->
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" id="item_box">
+          <div class="thumbnail item_box">
             <h4 class="text-center">
-              <span class="label label-info">Emperor</span>
+              <span class="label label-info">Magellanic</span>
             </h4>
-            <img src="images/ac4.png" class="img-responsive">
+            <div class="tall_img_box">
+              <img src="images/ac4.png" class="img-responsive ">
+            </div>
             <div class="caption">
               <div class="row">
                 <div class="col-md-6 col-xs-6">
@@ -316,12 +335,17 @@
             </div>
           </div>
         </div>
+        <!-- Item Box End -->
+
+        <!-- Item Box Start -->
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" id="item_box">
+          <div class="thumbnail item_box">
             <h4 class="text-center">
-              <span class="label label-info">Magellanic</span>
+              <span class="label label-info">King</span>
             </h4>
-            <img src="images/ac5.png" class="img-responsive">
+            <div class="tall_img_box">
+              <img src="images/ac5.png" class="img-responsive">
+            </div>
             <div class="caption">
               <div class="row">
                 <div class="col-md-6 col-xs-6">
@@ -349,12 +373,17 @@
             </div>
           </div>
         </div>
+        <!-- Item Box End -->
+
+        <!-- Item Box Start -->
         <div class="col-sm-6 col-md-4">
-          <div class="thumbnail" id="item_box">
+          <div class="thumbnail tall_item_box">
             <h4 class="text-center">
-              <span class="label label-info">Rockhopper</span>
+              <span class="label label-info">Emperor</span>
             </h4>
-            <img src="images/ac6.png" class="img-responsive">
+            <div class="tall_img_box">
+              <img src="images/ac6.png" class="img-responsive">
+            </div>
             <div class="caption">
               <div class="row">
                 <div class="col-md-6 col-xs-6">
@@ -369,7 +398,8 @@
               <p>32GB, 4GB Ram, 1080HD, 6.3 inches, WP 8</p>
               <div class="row">
                 <div class="col-md-6">
-                  <button type="button" href="#" class="btn btn-primary btn-product" data-toggle="modal" data-target="#myModal">
+                  <button type="button" href="#" class="btn btn-primary btn-product" data-toggle="modal" data-target="#adelie">
+                    <i class="fa fa-shopping-cart"></i>
                     Product Details</button>
                 </div>
                 <div class="col-md-6">
@@ -382,30 +412,96 @@
             </div>
           </div>
         </div>
+        <!-- Item Box End -->
       </div>
     </div>
     <!-- /.row -->
 
     <!-- Product Modals -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="adelie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <!-- Modal Title -->
+            <h3 class="modal-title" id="myModalLabel">Adelie</h3>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <img src="images/ac1.png" class="img-responsive">
+            <div class="caption">
+              <div class="row">
+                <div class="col-md-6 col-xs-6">
+                  <!-- Product Model -->
+                  <h3>Galaxy S5</h3>
+                </div>
+                <div class="col-md-6 col-xs-6 price">
+                  <h3>
+                    <!--Product Price  -->
+                    <label>$649.99</label>
+                  </h3>
+                </div>
+              </div>
+              <!-- Producy Description -->
+              <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="col-md-2 btn btn-success">
+                <i class="fa fa-shopping-cart"></i> Buy
+              </button>
+              <div class="col-md-8"></div>
+              <button type="button" class="col-md-2 btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="adelie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <!-- Modal Title -->
+              <h3 class="modal-title" id="myModalLabel">Fiordland</h3>
+            </div>
+            <div class="modal-body">
+              <img src="images/ac1.png" class="img-responsive">
+              <div class="caption">
+                <div class="row">
+                  <div class="col-md-6 col-xs-6">
+                    <!-- Product Model -->
+                    <h3>iPhone 6</h3>
+                  </div>
+                  <div class="col-md-6 col-xs-6 price">
+                    <h3>
+                      <!--Product Price  -->
+                      <label>$749.99</label>
+                    </h3>
+                  </div>
+                </div>
+                <!-- Producy Description -->
+                <p>32GB, 64Bit, 1080HD, 4.7 inches, iOS 8</p>
+  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="col-md-2 btn btn-success">
+                  <i class="fa fa-shopping-cart"></i> Buy
+                </button>
+                <div class="col-md-8"></div>
+                <button type="button" class="col-md-2 btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!-- /.Product Modals -->
+
 
 
     <!-- Features Section -->
@@ -455,7 +551,7 @@
     <footer>
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright &copy; Your Website 2014</p>
+          <p>Copyright &copy; Penguin Air 2017</p>
         </div>
       </div>
     </footer>
