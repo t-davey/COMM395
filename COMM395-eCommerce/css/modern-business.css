@@ -257,6 +257,11 @@ hr {
 
 /* ./Footer Styles */
 
+/* Shopping Cart Page Styles*/
+.cart_row {
+  margin-top: 0.5em;
+}
+
 /* Responsive Styles */
 
 /* 550px and up */

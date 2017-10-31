@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Penguin Air</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <script src="https://use.fontawesome.com/f2812e0a99.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="index.html">
+          <img class="nav_logo img-responsive" src="images/wide_logo.png"/>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="about.html" id="nav-button">About</a>
+          </li>
+          <li>
+            <a href="contact.html" id="nav-button">Contact</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" id="nav-button" data-toggle="dropdown">Services
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="portfolio-1-col.html">Residential Systems</a>
+              </li>
+              <li>
+                <a href="portfolio-2-col.html">Commercial Systems</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="cart.html" id="nav-button">
+              <i class="fa fa-shopping-cart"></i> $0.00
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Payment Info -->
+      <div class="col-xs-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4>Shipping Information</h4>
+          </div>
+          <div class="panel-body">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="control-group form-group col-xs-12">
+                <div class="controls">
+                  <label>Name on Card:</label>
+                  <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-block"></p>
+                </div>
+              </div>
+              <div class="control-group form-group col-xs-12">
+                <div class="controls">
+                  <label>Phone Number:</label>
+                  <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                </div>
+              </div>
+              <div class="control-group form-group col-xs-12">
+                <div class="controls">
+                  <label>Email Address:</label>
+                  <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                </div>
+              </div>
+              <div class="control-group form-group col-xs-6">
+                <div class="controls">
+                  <label>City:</label>
+                  <input type="email" class="form-control" id="city" required data-validation-required-message="Please enter your city.">
+                </div>
+              </div>
+              <!-- TODO: Drop down menu for state-->
+              <div class="control-group form-group col-xs-3">
+                <div class="controls">
+                  <label>State:</label>
+                  <input type="email" class="form-control" id="state" required data-validation-required-message="Please enter your state.">
+                </div>
+              </div>
+              <div class="control-group form-group col-xs-3">
+                <div class="controls">
+                  <label>Zip Code:</label>
+                  <input type="email" class="form-control" id="zip" required data-validation-required-message="Please enter your zip.">
+                </div>
+              </div>
+
+              <div id="success"></div>
+              <!-- For success/fail messages -->
+              <div class="col-xs-6 pull-right">
+                <button type="submit" class="btn btn-success btn-block">
+                  Confirm
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- /.Payment Info -->
+
+      <!-- Shopping Cart -->
+      <div class="col-xs-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <div class="row">
+                <div class="col-xs-6">
+                  <h4><i class="fa fa-shopping-cart"></i> Shopping Cart</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="row cart_row">
+              <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+              </div>
+              <div class="col-xs-4">
+                <h4 class="product-name"><strong>Product name</strong></h4>
+                <h4><small>Product description</small></h4>
+              </div>
+              <div class="col-xs-6">
+                <div class="col-xs-6 text-right">
+                  <h6><strong>$25.00 <span class="text-muted">x</span></strong></h6>
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" class="form-control input-sm" value="1">
+                </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-link btn-xs">
+  									<i class="fa fa-trash-o fa-2x"> </i>
+  								</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row cart_row">
+              <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+              </div>
+              <div class="col-xs-4">
+                <h4 class="product-name"><strong>Product name</strong></h4>
+                <h4><small>Product description</small></h4>
+              </div>
+              <div class="col-xs-6">
+                <div class="col-xs-6 text-right">
+                  <h6><strong>$25.00 <span class="text-muted">x</span></strong></h6>
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" class="form-control input-sm" value="1">
+                </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-link btn-xs">
+                    <i class="fa fa-trash-o fa-2x"> </i>
+  								</button>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row cart_row">
+              <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+              </div>
+              <div class="col-xs-4">
+                <h4 class="product-name"><strong>Product name</strong></h4>
+                <h4><small>Product description</small></h4>
+              </div>
+              <div class="col-xs-6">
+                <div class="col-xs-6 text-right">
+                  <h6><strong>$25.00 <span class="text-muted">x</span></strong></h6>
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" class="form-control input-sm" value="1">
+                </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-link btn-xs">
+                    <i class="fa fa-trash-o fa-2x"> </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row cart_row">
+              <div class="col-xs-12">
+                  <button type="button" class="btn btn-info btn-sm col-xs-3 pull-right">
+  									<i class="fa fa-refresh"></i> Update cart
+  								</button>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="row text-center">
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-primary btn-block">
+                  <i class="fa fa-arrow-circle-left"></i> Back to Store
+                </button>
+              </div>
+              <div class="col-xs-5">
+                <h4 class="text-right">Total <strong>$75.00</strong></h4>
+              </div>
+              <div class="col-xs-3">
+                <button type="button" class="btn btn-success btn-block">
+  								Checkout
+  							</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+
+
+  <!--footer-->
+  <hr>
+  <footer class="footer1">
+    <div class="container">
+      <div class="row">
+        <!-- row -->
+        <div class="col-xs-4">
+          <!-- widgets column left -->
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+            <li class="widget-container widget_nav_menu">
+              <!-- widgets list -->
+              <h1 class="title-widget">Get To Know Us</h1>
+              <ul class="footer_ul">
+                <li><a href="about.html"><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i> Testimonials</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- widgets column left end -->
+        <div class="col-xs-4">
+          <!-- widgets column left -->
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+            <li class="widget-container widget_nav_menu">
+              <!-- widgets list -->
+              <h1 class="title-widget">Product Pages</h1>
+              <ul>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Residential Series</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Commercial Series</a></li>
+                <li><a href="#"><i class="fa fa-angle-double-right"></i>  System Accessories</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- widgets column left end -->
+
+
+        <div class="col-xs-4">
+          <!-- widgets column center -->
+
+          <ul class="list-unstyled clear-margins">
+            <!-- widgets -->
+            <li class="widget-container widget_recent_news">
+              <!-- widgets list -->
+              <h1 class="title-widget">Contact Details </h1>
+              <div class="">
+                <p>
+                  1234 Cowboy Ave
+                  <br>Houston, TX 77001
+                  <br>
+                </p>
+                <p>
+                  <i class="fa fa-phone"></i>
+                  <abbr title="Phone">P</abbr>: (123) 456-7890</p>
+                <p>
+                  <i class="fa fa-envelope-o"></i>
+                  <abbr title="Email">E</abbr>:
+                  <a href="mailto:name@example.com">contact@penguinair.com</a>
+                </p>
+                <p>
+                  <i class="fa fa-clock-o"></i>
+                  <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <ul class="list-unstyled list-inline list-social-icons">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook-square fa-2x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-linkedin-square fa-2x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter-square fa-2x"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-google-plus-square fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--header-->
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="copyright">
+            © 2017, Penguin Air, All rights reserved
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+  <!-- /.footer -->
+
+</body>
