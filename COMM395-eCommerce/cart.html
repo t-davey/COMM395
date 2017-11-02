@@ -44,7 +44,7 @@
           <span class="icon-bar"></span>
         </button>
         <a href="index.html">
-          <img class="nav_logo img-responsive" src="images/wide_logo.png"/>
+          <img class="nav_logo img-responsive" src="images/wide_logo.png" />
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -88,13 +88,28 @@
       <div class="col-xs-6">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h4>Shipping Information</h4>
+            <h4>Billing Information</h4>
           </div>
           <div class="panel-body">
             <form name="sentMessage" id="contactForm" novalidate>
+              <div class="btn-group col-xs-12" role="group">
+                <button type="button" class="btn  btn-payment col-xs-3">
+                  <i class="fa fa-cc-visa fa-4x"></i>
+                </button>
+                <button type="button" class="btn  btn-payment col-xs-3">
+                  <i class="fa fa-cc-amex fa-4x"></i>
+                </button>
+                <button type="button" class="btn  btn-payment col-xs-3">
+                  <i class="fa fa-cc-paypal fa-4x"></i>
+                </button>
+                <button type="button" class="btn  btn-payment col-xs-3">
+                  <i class="fa fa-cc-discover fa-4x"></i>
+                </button>
+              </div>
               <div class="control-group form-group col-xs-12">
+                <hr>
                 <div class="controls">
-                  <label>Name on Card:</label>
+                  <label>Name:</label>
                   <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
                   <p class="help-block"></p>
                 </div>
@@ -151,44 +166,32 @@
             <div class="panel-title">
               <div class="row">
                 <div class="col-xs-6">
-                  <h4><i class="fa fa-shopping-cart"></i> Shopping Cart</h4>
+                  <h4>
+                    <i class="fa fa-shopping-cart"></i> Shopping Cart</h4>
                 </div>
               </div>
             </div>
           </div>
           <div class="panel-body">
             <div class="row cart_row">
-              <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+              <div class="col-xs-2">
+                <img class="img-responsive" src="http://placehold.it/100x70">
               </div>
               <div class="col-xs-4">
-                <h4 class="product-name"><strong>Product name</strong></h4>
-                <h4><small>Product description</small></h4>
+                <h4 class="product-name">
+                  <strong>Product name</strong>
+                </h4>
+                <h4>
+                  <small>Product description</small>
+                </h4>
               </div>
               <div class="col-xs-6">
                 <div class="col-xs-6 text-right">
-                  <h6><strong>$25.00 <span class="text-muted">x</span></strong></h6>
-                </div>
-                <div class="col-xs-4">
-                  <input type="text" class="form-control input-sm" value="1">
-                </div>
-                <div class="col-xs-2">
-                  <button type="button" class="btn btn-link btn-xs">
-  									<i class="fa fa-trash-o fa-2x"> </i>
-  								</button>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <div class="row cart_row">
-              <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
-              </div>
-              <div class="col-xs-4">
-                <h4 class="product-name"><strong>Product name</strong></h4>
-                <h4><small>Product description</small></h4>
-              </div>
-              <div class="col-xs-6">
-                <div class="col-xs-6 text-right">
-                  <h6><strong>$25.00 <span class="text-muted">x</span></strong></h6>
+                  <h6>
+                    <strong>$25.00
+                      <span class="text-muted">x</span>
+                    </strong>
+                  </h6>
                 </div>
                 <div class="col-xs-4">
                   <input type="text" class="form-control input-sm" value="1">
@@ -196,21 +199,61 @@
                 <div class="col-xs-2">
                   <button type="button" class="btn btn-link btn-xs">
                     <i class="fa fa-trash-o fa-2x"> </i>
-  								</button>
+                  </button>
                 </div>
               </div>
             </div>
             <hr>
             <div class="row cart_row">
-              <div class="col-xs-2"><img class="img-responsive" src="http://placehold.it/100x70">
+              <div class="col-xs-2">
+                <img class="img-responsive" src="http://placehold.it/100x70">
               </div>
               <div class="col-xs-4">
-                <h4 class="product-name"><strong>Product name</strong></h4>
-                <h4><small>Product description</small></h4>
+                <h4 class="product-name">
+                  <strong>Product name</strong>
+                </h4>
+                <h4>
+                  <small>Product description</small>
+                </h4>
               </div>
               <div class="col-xs-6">
                 <div class="col-xs-6 text-right">
-                  <h6><strong>$25.00 <span class="text-muted">x</span></strong></h6>
+                  <h6>
+                    <strong>$25.00
+                      <span class="text-muted">x</span>
+                    </strong>
+                  </h6>
+                </div>
+                <div class="col-xs-4">
+                  <input type="text" class="form-control input-sm" value="1">
+                </div>
+                <div class="col-xs-2">
+                  <button type="button" class="btn btn-link btn-xs">
+                    <i class="fa fa-trash-o fa-2x"> </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row cart_row">
+              <div class="col-xs-2">
+                <img class="img-responsive" src="http://placehold.it/100x70">
+              </div>
+              <div class="col-xs-4">
+                <h4 class="product-name">
+                  <strong>Product name</strong>
+                </h4>
+                <h4>
+                  <small>Product description</small>
+                </h4>
+              </div>
+              <div class="col-xs-6">
+                <div class="col-xs-6 text-right">
+                  <h6>
+                    <strong>$25.00
+                      <span class="text-muted">x</span>
+                    </strong>
+                  </h6>
                 </div>
                 <div class="col-xs-4">
                   <input type="text" class="form-control input-sm" value="1">
@@ -225,9 +268,9 @@
             <hr>
             <div class="row cart_row">
               <div class="col-xs-12">
-                  <button type="button" class="btn btn-info btn-sm col-xs-3 pull-right">
-  									<i class="fa fa-refresh"></i> Update cart
-  								</button>
+                <button type="button" class="btn btn-info btn-sm col-xs-3 pull-right">
+                  <i class="fa fa-refresh"></i> Update cart
+                </button>
               </div>
             </div>
           </div>
@@ -239,12 +282,14 @@
                 </button>
               </div>
               <div class="col-xs-5">
-                <h4 class="text-right">Total <strong>$75.00</strong></h4>
+                <h4 class="text-right">Total
+                  <strong>$75.00</strong>
+                </h4>
               </div>
               <div class="col-xs-3">
                 <button type="button" class="btn btn-success btn-block">
-  								Checkout
-  							</button>
+                  Checkout
+                </button>
               </div>
             </div>
           </div>
@@ -272,9 +317,18 @@
               <!-- widgets list -->
               <h1 class="title-widget">Get To Know Us</h1>
               <ul class="footer_ul">
-                <li><a href="about.html"><i class="fa fa-angle-double-right"></i> About Us</a></li>
-                <li><a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i> Testimonials</a></li>
+                <li>
+                  <a href="about.html">
+                    <i class="fa fa-angle-double-right"></i> About Us</a>
+                </li>
+                <li>
+                  <a href="contact.html">
+                    <i class="fa fa-angle-double-right"></i> Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i> Testimonials</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -288,9 +342,18 @@
               <!-- widgets list -->
               <h1 class="title-widget">Product Pages</h1>
               <ul>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Residential Series</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i>  Commercial Series</a></li>
-                <li><a href="#"><i class="fa fa-angle-double-right"></i>  System Accessories</a></li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i> Residential Series</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i> Commercial Series</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-double-right"></i> System Accessories</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -368,5 +431,11 @@
   </div>
   <!-- /.container -->
   <!-- /.footer -->
+
+  <!-- <script>
+    $(".btn-group button").click(function () {
+      $("#buttonvalue").val($(this).text());
+    });
+  </script> -->
 
 </body>

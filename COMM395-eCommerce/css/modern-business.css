@@ -68,6 +68,10 @@ header.carousel .fill {
   color: #222;
 }
 
+.info-panel {
+  min-height: 15em;
+}
+
 .btn-info {
   color: #222;
   border-color: #337AB7;
@@ -109,35 +113,38 @@ header.carousel .fill {
   max-height: 400px;
 }
 
+.company-img {
+  margin-top: 1em;
+}
+
+.company-img-div {
+  height: 100%;
+}
+
+.testimonial {
+  min-height: 15em;
+}
+
+.fa-star {
+  color: gold;
+}
+
+.fa-star-o {
+  color: gold;
+}
 /* Contact Page Styles */
 
 .form-control {
   border-color: #337AB7;
 }
 
-/* 404 Page Styles */
-
-.error-404 {
-  font-size: 100px;
+/* Shopping Cart Page Styles*/
+.cart_row {
+  margin-top: 0.5em;
 }
 
-/* Pricing Page Styles */
-
-.price {
-  display: block;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.price sup {
-  top: -20px;
-  left: 2px;
-  font-size: 20px;
-}
-
-.period {
-  display: block;
-  font-style: italic;
+.btn-payment::after {
+  background-color: red;
 }
 
 /* Footer Styles */
@@ -237,7 +244,7 @@ hr {
 }
 
 .copyright {
-  color: #fff;
+  color: #222;
   line-height: 30px;
   min-height: 30px;
   padding: 7px 0;
@@ -257,10 +264,6 @@ hr {
 
 /* ./Footer Styles */
 
-/* Shopping Cart Page Styles*/
-.cart_row {
-  margin-top: 0.5em;
-}
 
 /* Responsive Styles */
 
