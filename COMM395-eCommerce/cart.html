@@ -85,64 +85,77 @@
     <div class="row">
 
       <!-- Payment Info -->
-      <div class="col-xs-6">
-        <div class="panel panel-primary">
+      <!-- TODO: Pull footer down. -->
+      <div class="col-xs-12 col-md-6">
+        <div class="panel panel-primary billing_panel">
           <div class="panel-heading">
-            <h4>Billing Information</h4>
-          </div>
+            <h4>
+              <i class="fa fa-usd"></i> Billing Information
+            </h4>          </div>
           <div class="panel-body">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="btn-group col-xs-12" role="group">
-                <button type="button" class="btn  btn-payment col-xs-3">
+                <button type="button" class="btn  btn-default col-xs-3">
                   <i class="fa fa-cc-visa fa-4x"></i>
                 </button>
-                <button type="button" class="btn  btn-payment col-xs-3">
+                <button type="button" class="btn  btn-default col-xs-3">
                   <i class="fa fa-cc-amex fa-4x"></i>
                 </button>
-                <button type="button" class="btn  btn-payment col-xs-3">
+                <button type="button" class="btn  btn-default col-xs-3">
                   <i class="fa fa-cc-paypal fa-4x"></i>
                 </button>
-                <button type="button" class="btn  btn-payment col-xs-3">
+                <button type="button" class="btn  btn-default col-xs-3">
                   <i class="fa fa-cc-discover fa-4x"></i>
                 </button>
               </div>
               <div class="control-group form-group col-xs-12">
                 <hr>
+                <br>
                 <div class="controls">
                   <label>Name:</label>
                   <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
-                  <p class="help-block"></p>
                 </div>
               </div>
-              <div class="control-group form-group col-xs-12">
+              <div class="control-group form-group col-xs-8">
+                <div class="controls">
+                  <label>Card Number:</label>
+                  <input type="tel" class="form-control" id="card" required data-validation-required-message="Please enter your card number.">
+                </div>
+              </div>
+              <div class="control-group form-group col-xs-4">
+                <div class="controls">
+                  <label>Security Code:</label>
+                  <input type="tel" class="form-control" id="card_code" required data-validation-required-message="Please enter your card security code.">
+                </div>
+              </div>
+              <div class="control-group form-group col-xs-5">
                 <div class="controls">
                   <label>Phone Number:</label>
-                  <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                  <input type="tel" class="form-control" id="phone" placeholder="(315) 555-6789" required data-validation-required-message="Please enter your phone number.">
                 </div>
               </div>
-              <div class="control-group form-group col-xs-12">
+              <div class="control-group form-group col-xs-7">
                 <div class="controls">
                   <label>Email Address:</label>
-                  <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                  <input type="email" class="form-control" id="email" placeholder="example@site.com" required data-validation-required-message="Please enter your email address.">
                 </div>
               </div>
               <div class="control-group form-group col-xs-6">
                 <div class="controls">
                   <label>City:</label>
-                  <input type="email" class="form-control" id="city" required data-validation-required-message="Please enter your city.">
+                  <input type="email" class="form-control" id="city" placeholder="Houston" required data-validation-required-message="Please enter your city.">
                 </div>
               </div>
-              <!-- TODO: Drop down menu for state-->
               <div class="control-group form-group col-xs-3">
                 <div class="controls">
                   <label>State:</label>
-                  <input type="email" class="form-control" id="state" required data-validation-required-message="Please enter your state.">
+                  <input type="email" class="form-control" id="state" placeholder="(e.g. TX)" required data-validation-required-message="Please enter your state.">
                 </div>
               </div>
               <div class="control-group form-group col-xs-3">
                 <div class="controls">
                   <label>Zip Code:</label>
-                  <input type="email" class="form-control" id="zip" required data-validation-required-message="Please enter your zip.">
+                  <input type="email" class="form-control" id="zip" placeholder="77001" required data-validation-required-message="Please enter your zip.">
                 </div>
               </div>
 
@@ -150,7 +163,7 @@
               <!-- For success/fail messages -->
               <div class="col-xs-6 pull-right">
                 <button type="submit" class="btn btn-success btn-block">
-                  Confirm
+                  <i class="fa fa-check"></i> Confirm
                 </button>
               </div>
             </form>
@@ -160,14 +173,15 @@
       <!-- /.Payment Info -->
 
       <!-- Shopping Cart -->
-      <div class="col-xs-6">
-        <div class="panel panel-primary">
+      <div class="col-xs-12 col-md-6">
+        <div class="panel panel-primary cart_panel">
           <div class="panel-heading">
             <div class="panel-title">
               <div class="row">
                 <div class="col-xs-6">
                   <h4>
-                    <i class="fa fa-shopping-cart"></i> Shopping Cart</h4>
+                    <i class="fa fa-shopping-cart"></i> Shopping Cart
+                  </h4>
                 </div>
               </div>
             </div>
@@ -175,20 +189,17 @@
           <div class="panel-body">
             <div class="row cart_row">
               <div class="col-xs-2">
-                <img class="img-responsive" src="http://placehold.it/100x70">
+                <img class="img-responsive cart_img" src="images/ac1.png">
               </div>
               <div class="col-xs-4">
                 <h4 class="product-name">
-                  <strong>Product name</strong>
-                </h4>
-                <h4>
-                  <small>Product description</small>
+                  <strong>Adeli</strong>
                 </h4>
               </div>
               <div class="col-xs-6">
                 <div class="col-xs-6 text-right">
                   <h6>
-                    <strong>$25.00
+                    <strong>$249.99
                       <span class="text-muted">x</span>
                     </strong>
                   </h6>
@@ -206,20 +217,16 @@
             <hr>
             <div class="row cart_row">
               <div class="col-xs-2">
-                <img class="img-responsive" src="http://placehold.it/100x70">
+                <img class="img-responsive cart_img" src="images/ac2.png">
               </div>
               <div class="col-xs-4">
                 <h4 class="product-name">
-                  <strong>Product name</strong>
-                </h4>
-                <h4>
-                  <small>Product description</small>
-                </h4>
+                  <strong>Fiordland</strong>
               </div>
               <div class="col-xs-6">
                 <div class="col-xs-6 text-right">
                   <h6>
-                    <strong>$25.00
+                    <strong>$349.99
                       <span class="text-muted">x</span>
                     </strong>
                   </h6>
@@ -237,20 +244,17 @@
             <hr>
             <div class="row cart_row">
               <div class="col-xs-2">
-                <img class="img-responsive" src="http://placehold.it/100x70">
+                <img class="img-responsive cart_img" src="images/ac6.png">
               </div>
               <div class="col-xs-4">
                 <h4 class="product-name">
-                  <strong>Product name</strong>
-                </h4>
-                <h4>
-                  <small>Product description</small>
+                  <strong>Emperor</strong>
                 </h4>
               </div>
               <div class="col-xs-6">
                 <div class="col-xs-6 text-right">
                   <h6>
-                    <strong>$25.00
+                    <strong>$1,149.00
                       <span class="text-muted">x</span>
                     </strong>
                   </h6>
@@ -283,7 +287,7 @@
               </div>
               <div class="col-xs-5">
                 <h4 class="text-right">Total
-                  <strong>$75.00</strong>
+                  <strong>$1,748.98</strong>
                 </h4>
               </div>
               <div class="col-xs-3">
@@ -317,18 +321,9 @@
               <!-- widgets list -->
               <h1 class="title-widget">Get To Know Us</h1>
               <ul class="footer_ul">
-                <li>
-                  <a href="about.html">
-                    <i class="fa fa-angle-double-right"></i> About Us</a>
-                </li>
-                <li>
-                  <a href="contact.html">
-                    <i class="fa fa-angle-double-right"></i> Contact Us</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-double-right"></i> Testimonials</a>
-                </li>
+                <li><a href="about.html"> About Us</a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
+                <li><a href="about.html"> Testimonials</a></li>
               </ul>
             </li>
           </ul>
@@ -342,18 +337,9 @@
               <!-- widgets list -->
               <h1 class="title-widget">Product Pages</h1>
               <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-double-right"></i> Residential Series</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-double-right"></i> Commercial Series</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-double-right"></i> System Accessories</a>
-                </li>
+                <li><a href="#">  Residential Series</a></li>
+                <li><a href="#">  Commercial Series</a></li>
+                <li><a href="#">  System Accessories</a></li>
               </ul>
             </li>
           </ul>

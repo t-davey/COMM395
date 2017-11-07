@@ -143,8 +143,18 @@ header.carousel .fill {
   margin-top: 0.5em;
 }
 
-.btn-payment::after {
-  background-color: red;
+.cart_img {
+  max-width: 100px;
+  max-height: 70px;
+  padding-right: 2em;
+}
+
+.billing_panel {
+  min-height: 40em;
+}
+
+.cart_panel {
+  min-height: 40em;
 }
 
 /* Footer Styles */
