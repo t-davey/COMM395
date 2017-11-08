@@ -43,7 +43,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
-  height: 50%;
+  height: 65%;
 }
 
 header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
@@ -55,6 +55,11 @@ header.carousel .fill {
   height: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  background-color: rgb(68, 68, 68, 0.7);
 }
 
 /* Triple Box Section */
@@ -105,6 +110,11 @@ header.carousel .fill {
 
 .modal-title {
   color: #222;
+}
+
+.prod_desc {
+  list-style: none;
+  margin-top: 0.5em;
 }
 
 /* About Page Styles */
@@ -158,7 +168,6 @@ header.carousel .fill {
 }
 
 /* Footer Styles */
-
 hr {
   border-color: #337AB7;
   margin-bottom: 0;
