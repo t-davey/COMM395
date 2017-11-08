@@ -161,12 +161,20 @@ header.carousel .fill {
 
 .billing_panel {
   min-height: 40em;
+  position: relative;
 }
 
 .cart_panel {
   min-height: 40em;
+  position: relative;
 }
 
+.panel-footer {
+  position: absolute;
+  height: 4em;
+  width: 100%;
+  bottom: 0px;
+}
 /* Footer Styles */
 hr {
   border-color: #337AB7;

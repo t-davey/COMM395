@@ -164,12 +164,12 @@
 
               <div id="success"></div>
               <!-- For success/fail messages -->
-              <div class="col-xs-6 pull-right">
-                <button type="submit" class="btn btn-success btn-block">
-                  <i class="fa fa-check"></i> Confirm
-                </button>
-              </div>
             </form>
+          </div>
+          <div class="panel-footer col-xs-6 pull-right">
+            <button type="submit" class="btn btn-success btn-block">
+              <i class="fa fa-check"></i> Confirm
+            </button>
           </div>
         </div>
       </div>
@@ -433,10 +433,11 @@
   <!-- /.container -->
   <!-- /.footer -->
 
-  <!-- <script>
-    $(".btn-group button").click(function () {
-      $("#buttonvalue").val($(this).text());
+  <script>
+    $('button').on('click', function () {
+      $('button').removeClass('selected');
+      $(this).addClass('selected');
     });
-  </script> -->
+  </script>
 
 </body>
