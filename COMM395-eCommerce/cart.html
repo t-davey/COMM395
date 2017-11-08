@@ -91,7 +91,8 @@
           <div class="panel-heading">
             <h4>
               <i class="fa fa-usd"></i> Billing Information
-            </h4>          </div>
+            </h4>
+          </div>
           <div class="panel-body">
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="btn-group col-xs-12" role="group">
@@ -161,12 +162,12 @@
 
               <div id="success"></div>
               <!-- For success/fail messages -->
-              <div class="col-xs-6 pull-right">
-                <button type="submit" class="btn btn-success btn-block">
-                  <i class="fa fa-check"></i> Confirm
-                </button>
-              </div>
             </form>
+          </div>
+          <div class="panel-footer col-xs-6 pull-right">
+            <button type="submit" class="btn btn-success btn-block">
+              <i class="fa fa-check"></i> Confirm
+            </button>
           </div>
         </div>
       </div>
@@ -321,9 +322,15 @@
               <!-- widgets list -->
               <h1 class="title-widget">Get To Know Us</h1>
               <ul class="footer_ul">
-                <li><a href="about.html"> About Us</a></li>
-                <li><a href="contact.html"> Contact Us</a></li>
-                <li><a href="about.html"> Testimonials</a></li>
+                <li>
+                  <a href="about.html"> About Us</a>
+                </li>
+                <li>
+                  <a href="contact.html"> Contact Us</a>
+                </li>
+                <li>
+                  <a href="about.html"> Testimonials</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -337,9 +344,15 @@
               <!-- widgets list -->
               <h1 class="title-widget">Product Pages</h1>
               <ul>
-                <li><a href="#">  Residential Series</a></li>
-                <li><a href="#">  Commercial Series</a></li>
-                <li><a href="#">  System Accessories</a></li>
+                <li>
+                  <a href="#"> Residential Series</a>
+                </li>
+                <li>
+                  <a href="#"> Commercial Series</a>
+                </li>
+                <li>
+                  <a href="#"> System Accessories</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -418,10 +431,11 @@
   <!-- /.container -->
   <!-- /.footer -->
 
-  <!-- <script>
-    $(".btn-group button").click(function () {
-      $("#buttonvalue").val($(this).text());
+  <script>
+    $('button').on('click', function () {
+      $('button').removeClass('selected');
+      $(this).addClass('selected');
     });
-  </script> -->
+  </script>
 
 </body>
