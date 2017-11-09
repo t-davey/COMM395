@@ -61,12 +61,18 @@ header.carousel .fill {
 .carousel-caption {
   position: absolute;
   background-color: rgb(68, 68, 68, 0.3);
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 /* Global Styles */
 
 .page-header {
   border-color: #337AB7;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -79,7 +85,11 @@ header.carousel .fill {
 }
 
 .btn {
-  font-family: 'Amiko', sans-serif;  
+  font-family: 'Amiko', sans-serif;
+}
+
+p {
+  font-family: 'Amiko', sans-serif;
 }
 /* Triple Box Section */
 .triple_panel {
@@ -96,9 +106,9 @@ header.carousel .fill {
   color: #222;
 }
 
-.info-panel {
+/*.info-panel {
   min-height: 16em;
-}
+}*/
 
 .btn-info {
   color: #222;
@@ -138,11 +148,13 @@ header.carousel .fill {
 .prod_desc {
   list-style: none;
   margin-top: 0.5em;
+  font-family: 'Amiko', sans-serif;
+
 }
 
 /* About Page Styles */
 .about_img {
-   
+
 }
 
 .company-img {
@@ -197,14 +209,13 @@ header.carousel .fill {
   width: 100%;
   bottom: 0px;
 }
+
 /* Footer Styles */
 hr {
   border-color: #337AB7;
   margin-bottom: 0;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
-@import url(http://fonts.googleapis.com/css?family=Gudea);
 .footer1 {
   background-color: #EEE;
   padding-top: 40px;
@@ -274,10 +285,6 @@ hr {
   font-family: 'Amiko', sans-serif;
 }
 
-.footerp p {
-  font-family: 'Gudea', sans-serif;
-}
-
 .nomargin {
   margin: 0px;
   padding: 0px;
@@ -294,6 +301,8 @@ hr {
   line-height: 30px;
   min-height: 30px;
   padding: 7px 0;
+  font-family: 'Amiko', sans-serif;
+
 }
 
 .design {
@@ -313,37 +322,77 @@ hr {
 
 /* Responsive Styles */
 
-/* 550px and up */
-
-@media screen and (min-width: 550px) {
-  .panel {
-    margin: 3em auto;
-    width: 70%;
+/* Extra small devices (phones, less than 768px) */
+@media (min-width: 576px) {
+  .triple_panel {
+    height: 15em;
   }
+
+  .short_img_box {
+    padding-top: 0.5em;
+    height: 400px;
+  }
+
+  .tall_img_box {
+    padding-top: 0.5em;
+    height: 550px;
+  }
+
 }
-
-/* 768px - 991px */
-
-@media screen and (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .widget_nav_menu ul li {
     width: 60%;
   }
+
   .widget-container {
     padding-top: 1em;
     padding-bottom: 0em;
     margin-bottom: 0em;
   }
+
+  .billing_panel {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  .cart_panel {
+    margin-bottom: 5em;
+  }
+
+  .triple_panel {
+    height: 15em;
+  }
+
+  .short_img_box {
+    height: 250px;
+  }
+
+  .tall_img_box {
+    height: 400px;
+  }
+
 }
 
-/* 992px - 1199px */
-
-@media screen and (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   .panel {
     margin: 3em auto;
     width: 100%;
   }
+
+  .triple_panel {
+    height: 22em;
+  }
+
+
+
 }
 
-/* 1200px and up */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .triple_panel {
+    height: 20em;
+  }
 
-@media screen and (min-width: 1200px) {}
+}
