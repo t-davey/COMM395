@@ -28,6 +28,7 @@ body {
 .navbar {
   background-color: #52B7D5;
   height: 5.5em;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 #nav-button {
@@ -59,13 +60,35 @@ header.carousel .fill {
 
 .carousel-caption {
   position: absolute;
-  background-color: rgb(68, 68, 68, 0.7);
+  background-color: rgb(68, 68, 68, 0.3);
 }
 
-/* Triple Box Section */
+/* Global Styles */
 
 .page-header {
   border-color: #337AB7;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.panel-heading {
+  font-family: 'Roboto', sans-serif;
+}
+
+.panel-body {
+  font-family: 'Amiko', sans-serif;
+}
+
+.btn {
+  font-family: 'Amiko', sans-serif;  
+}
+/* Triple Box Section */
+.triple_panel {
+  position: relative;
+}
+
+.triple_footer {
+  position: absolute;
+  bottom: 1em;
 }
 
 .panel-primary .panel-heading {
@@ -74,7 +97,7 @@ header.carousel .fill {
 }
 
 .info-panel {
-  min-height: 15em;
+  min-height: 16em;
 }
 
 .btn-info {
@@ -118,9 +141,8 @@ header.carousel .fill {
 }
 
 /* About Page Styles */
-
-.ceo {
-  max-height: 400px;
+.about_img {
+   
 }
 
 .company-img {
@@ -200,8 +222,7 @@ hr {
   font-weight: 300;
   line-height: 1;
   position: relative;
-  text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 25px;
@@ -239,7 +260,6 @@ hr {
   font-weight: 700;
   line-height: 20px;
   position: relative;
-  text-transform: uppercase;
   border-bottom: 1px solid rgba(100, 100, 100, 0.15);
   margin-bottom: 7px;
   padding-bottom: 7px;
@@ -251,8 +271,7 @@ hr {
   font-size: 20px;
   line-height: 20px;
   margin: 0 0 15px;
-  text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Amiko', sans-serif;
 }
 
 .footerp p {
