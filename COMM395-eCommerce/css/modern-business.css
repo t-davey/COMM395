@@ -41,6 +41,28 @@ body {
   height: 5.5em;
 }
 
+.navbar-toggle {
+  background-color: #ddd;
+  border-radius: 0.5em;
+  /* box-shadow: 0.125em 0.125em 0.125em #555; */
+}
+
+.navbar-toggle:hover {
+  background-color: #bbb;  
+}
+
+.navbar-toggle:active {
+  box-shadow: 0.125em 0.125em 0.25em #555 inset;  
+}
+
+.navbar-collapse {
+  background-color: #52B7D5;
+}
+
+.fa-bars {
+  color: #636363;
+}
+
 /* Home Page Carousel */
 
 header.carousel {
