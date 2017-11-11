@@ -6,7 +6,9 @@
 
 
 /* Global Styles */
-
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -15,6 +17,7 @@ body {
 body {
   padding-top: 5.75em;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  position: relative;
 }
 
 .img-portfolio {
@@ -198,8 +201,7 @@ p {
 }
 
 .about_img {
-  padding-top: auto;
-  padding-bottom: auto;
+
 }
 
 .company-img {
