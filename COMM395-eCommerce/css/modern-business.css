@@ -125,6 +125,8 @@ p {
 
 .triple_panel {
   position: relative;
+  box-shadow: 0.125em 0.125em 0.125em #444;
+  
 }
 
 .triple_footer {
@@ -136,11 +138,6 @@ p {
   background-color: #52B7D5;
   color: #222;
 }
-
-
-/*.info-panel {
-  min-height: 16em;
-}*/
 
 .btn-info {
   color: #222;
@@ -160,6 +157,7 @@ p {
 
 .thumbnail {
   border-color: #337AB7;
+  box-shadow: 0.125em 0.125em 0.125em #444;
 }
 
 
@@ -191,6 +189,7 @@ p {
 .about_panel {
   min-height: 22em;
   position: relative;
+  box-shadow: 0.125em 0.125em 0.125em #444;
 }
 
 .about_footer {
@@ -240,6 +239,9 @@ p {
   border-color: #337AB7;
 }
 
+.contact_panel {
+  box-shadow: 0.125em 0.125em 0.125em #444;  
+}
 
 /* Shopping Cart Page Styles*/
 
@@ -256,11 +258,14 @@ p {
 .billing_panel {
   min-height: 40em;
   position: relative;
+  box-shadow: 0.125em 0.125em 0.125em #444;    
 }
 
 .cart_panel {
   min-height: 40em;
   position: relative;
+  box-shadow: 0.125em 0.125em 0.125em #444;  
+  
 }
 
 .panel-footer {
@@ -269,7 +274,6 @@ p {
   width: 100%;
   bottom: 0px;
 }
-
 
 /* Footer Styles */
 
