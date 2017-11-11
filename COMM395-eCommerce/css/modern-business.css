@@ -347,7 +347,7 @@ hr {
 /* Extra small devices (phones, less than 768px) */
 @media (min-width: 576px) {
   .triple_panel {
-    height: 15em;
+    height: 17.5em;
   }
 
   .short_img_box {
@@ -358,6 +358,15 @@ hr {
   .tall_img_box {
     padding-top: 0.5em;
     height: 550px;
+  }
+
+  .billing_panel {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+
+  .cart_panel {
+    margin-bottom: 5em;
   }
 
 }
@@ -383,7 +392,7 @@ hr {
   }
 
   .triple_panel {
-    height: 15em;
+    height: 17.5em;
   }
 
   .short_img_box {
