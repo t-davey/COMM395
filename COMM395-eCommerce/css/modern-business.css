@@ -4,9 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
 /* Global Styles */
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -22,6 +24,7 @@ body {
 .img-hover:hover {
   opacity: 0.8;
 }
+
 
 /* Navbar Styles */
 
@@ -48,11 +51,11 @@ body {
 }
 
 .navbar-toggle:hover {
-  background-color: #bbb;  
+  background-color: #bbb;
 }
 
 .navbar-toggle:active {
-  box-shadow: 0.125em 0.125em 0.25em #555 inset;  
+  box-shadow: 0.125em 0.125em 0.25em #555 inset;
 }
 
 .navbar-collapse {
@@ -63,13 +66,16 @@ body {
   color: #636363;
 }
 
+
 /* Home Page Carousel */
 
 header.carousel {
   height: 65%;
 }
 
-header.carousel .item, header.carousel .item.active, header.carousel .carousel-inner {
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
   height: 100%;
 }
 
@@ -84,8 +90,8 @@ header.carousel .fill {
   position: absolute;
   background-color: rgb(68, 68, 68, 0.3);
   font-family: 'Roboto Condensed', sans-serif;
-
 }
+
 
 /* Global Styles */
 
@@ -113,7 +119,10 @@ h3 {
 p {
   font-family: 'Amiko', sans-serif;
 }
+
+
 /* Triple Box Section */
+
 .triple_panel {
   position: relative;
 }
@@ -128,6 +137,7 @@ p {
   color: #222;
 }
 
+
 /*.info-panel {
   min-height: 16em;
 }*/
@@ -136,6 +146,7 @@ p {
   color: #222;
   border-color: #337AB7;
 }
+
 
 /* Product Gallery Styles*/
 
@@ -150,6 +161,7 @@ p {
 .thumbnail {
   border-color: #337AB7;
 }
+
 
 /* Modal Styles */
 
@@ -171,12 +183,24 @@ p {
   list-style: none;
   margin-top: 0.5em;
   font-family: 'Amiko', sans-serif;
-
 }
 
-/* About Page Styles */
-.about_img {
 
+/* About Page Styles */
+
+.about_panel {
+  min-height: 22em;
+  position: relative;
+}
+
+.about_footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+.about_img {
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
 .company-img {
@@ -188,7 +212,17 @@ p {
 }
 
 .testimonial {
-  min-height: 15em;
+  min-height: 18em;
+  position: relative;
+}
+
+.testimonial_footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+.testimonial_btns {
+  height: 100%;
 }
 
 .fa-star {
@@ -198,13 +232,17 @@ p {
 .fa-star-o {
   color: gold;
 }
+
+
 /* Contact Page Styles */
 
 .form-control {
   border-color: #337AB7;
 }
 
+
 /* Shopping Cart Page Styles*/
+
 .cart_row {
   margin-top: 0.5em;
 }
@@ -232,7 +270,9 @@ p {
   bottom: 0px;
 }
 
+
 /* Footer Styles */
+
 hr {
   border-color: #337AB7;
   margin-bottom: 0;
@@ -324,7 +364,6 @@ hr {
   min-height: 30px;
   padding: 7px 0;
   font-family: 'Amiko', sans-serif;
-
 }
 
 .design {
@@ -339,91 +378,84 @@ hr {
   color: #fff;
 }
 
+
 /* ./Footer Styles */
 
 
 /* Responsive Styles */
 
+
 /* Extra small devices (phones, less than 768px) */
+
 @media (min-width: 576px) {
   .triple_panel {
     height: 17.5em;
   }
-
   .short_img_box {
     padding-top: 0.5em;
     height: 400px;
   }
-
   .tall_img_box {
     padding-top: 0.5em;
     height: 550px;
   }
-
   .billing_panel {
     margin-top: 5em;
     margin-bottom: 5em;
   }
-
   .cart_panel {
     margin-bottom: 5em;
   }
-
 }
+
+
 /* Small devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
   .widget_nav_menu ul li {
     width: 60%;
   }
-
   .widget-container {
     padding-top: 1em;
     padding-bottom: 0em;
     margin-bottom: 0em;
   }
-
   .billing_panel {
     margin-top: 5em;
     margin-bottom: 5em;
   }
-
   .cart_panel {
     margin-bottom: 5em;
   }
-
   .triple_panel {
     height: 17.5em;
   }
-
   .short_img_box {
     height: 250px;
   }
-
   .tall_img_box {
     height: 400px;
   }
-
 }
 
+
 /* Medium devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
   .panel {
     margin: 3em auto;
     width: 100%;
   }
-
   .triple_panel {
     height: 22em;
   }
-
-
-
 }
 
+
 /* Large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
   .triple_panel {
     height: 20em;
   }
-
 }
