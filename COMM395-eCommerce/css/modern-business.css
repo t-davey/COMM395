@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  padding-top: 5.5em;
+  padding-top: 5.75em;
   /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -27,7 +27,7 @@ body {
 
 .navbar {
   background-color: #52B7D5;
-  height: 5.5em;
+  height: 5.75em;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .nav_logo {
-  height: 5.5em;
+  height: 5.75em;
 }
 
 .navbar-toggle {
