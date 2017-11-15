@@ -89,17 +89,17 @@
           <div class="panel-body">
             <form name="sentMessage" id="contactForm" novalidate>
               <!-- Card Type Buttons -->
-              <div class="btn-group col-xs-12" role="group">
-                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
+              <div class="btn-group col-xs-12" role="group" id="pay-btns">
+                <button type="button" class="btn btn-default col-xs-3">
                   <i class="fa fa-cc-visa fa-4x"></i>
                 </button>
-                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
+                <button type="button" class="btn btn-default col-xs-3">
                   <i class="fa fa-cc-amex fa-4x"></i>
                 </button>
-                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
+                <button type="button" class="btn btn-default col-xs-3">
                   <i class="fa fa-cc-paypal fa-4x"></i>
                 </button>
-                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
+                <button type="button" class="btn btn-default col-xs-3">
                   <i class="fa fa-cc-discover fa-4x"></i>
                 </button>
               </div>
@@ -269,7 +269,7 @@
             <div class="row cart_row">
               <div class="col-xs-12">
                 <button type="button" class="btn btn-info btn-sm col-xs-3 pull-right">
-                  <i class="fa fa-refresh"></i> Refresh
+                  <i class="fa fa-refresh" id="refresh-btn"></i> Refresh
                 </button>
               </div>
             </div>
@@ -428,9 +428,17 @@
 
   <!-- Script for payment type buttons -->
   <script>
-    $("#pay-btn").click(function () {
-      $("button").removeClass("btn-selected");
+    $("#pay-btns button").click(function () {
+      $("#pay-btns button").removeClass("btn-selected");
       $(this).addClass("btn-selected");
+    });
+  </script>
+
+  <!-- Toggles spinning refresh icon -->
+  <!-- Serves no real purpose, I just wanted to mess with jQuery -->
+  <script>
+    $("button").click(function ()  {
+      $("#refresh-btn").toggleClass("fa-spin");
     });
   </script>
 

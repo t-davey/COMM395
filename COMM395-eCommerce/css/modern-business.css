@@ -277,17 +277,17 @@ p {
   bottom: 0px;
 }
 
-#pay-btn:hover {
+.btn-pay:hover {
   background-color: #bbb;
 }
 
-#pay-btn:active {
+.btn-pay:active {
   background-color: #bbb;
   box-shadow: 0.125em 0.125em 0.125em inset #555;
 }
 
 .btn-selected {
-  background-color: #bbb;
+  background-color: #ccc;
   box-shadow: 0.125em 0.125em 0.125em inset #555;
 }
 
