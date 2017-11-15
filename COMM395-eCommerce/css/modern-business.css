@@ -34,7 +34,7 @@ body {
 .navbar {
   background-color: #52B7D5;
   height: 5.75em;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #nav-button {
@@ -92,7 +92,9 @@ header.carousel .fill {
 .carousel-caption {
   position: absolute;
   background-color: rgb(68, 68, 68, 0.3);
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Raleway', sans-serif;  
+  
 }
 
 
@@ -100,27 +102,35 @@ header.carousel .fill {
 
 .page-header {
   border-color: #337AB7;
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Oswald', sans-serif;
 }
 
 h3 {
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  font-family: 'Raleway', sans-serif;  
 }
 
-.panel-heading {
-  font-family: 'Roboto', sans-serif;
+
+.panel-heading h4 {
+  /* font-family: 'Amiko', sans-serif; */
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.75em;
+  color: white;
 }
 
 .panel-body {
-  font-family: 'Amiko', sans-serif;
+  /* font-family: 'Amiko', sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 
 .btn {
-  font-family: 'Amiko', sans-serif;
-}
+  /* font-family: 'Amiko', sans-serif; */
+  font-family: 'Raleway', sans-serif;}
 
 p {
-  font-family: 'Amiko', sans-serif;
+  /* font-family: 'Amiko', sans-serif; */
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -163,6 +173,10 @@ p {
   box-shadow: 0.125em 0.125em 0.125em #444;
 }
 
+.thumbnail:hover {
+  box-shadow: 0.225em 0.25em 0.5em #333;
+  transition-duration: 0.3s;
+}
 
 /* Modal Styles */
 
@@ -193,6 +207,8 @@ p {
   min-height: 22em;
   position: relative;
   box-shadow: 0.125em 0.125em 0.125em #444;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
 .about_footer {
@@ -215,6 +231,8 @@ p {
 .testimonial {
   min-height: 18em;
   position: relative;
+  font-family: 'Raleway', sans-serif;
+  
 }
 
 .testimonial_footer {
@@ -296,6 +314,10 @@ p {
 hr {
   border-color: #337AB7;
   margin-bottom: 0;
+}
+
+.footer_contact p{
+  font-family: 'Amiko', sans-serif;
 }
 
 .footer1 {
@@ -409,7 +431,7 @@ hr {
 
 @media (min-width: 576px) {
   .triple_panel {
-    height: 17.5em;
+    height: 15em;
   }
   .short_img_box {
     padding-top: 0.5em;
@@ -448,7 +470,7 @@ hr {
     margin-bottom: 5em;
   }
   .triple_panel {
-    height: 17.5em;
+    height: 15em;
   }
   .short_img_box {
     height: 250px;
@@ -467,7 +489,7 @@ hr {
     width: 100%;
   }
   .triple_panel {
-    height: 22em;
+    height: 20em;
   }
 }
 
@@ -476,6 +498,6 @@ hr {
 
 @media (min-width: 1200px) {
   .triple_panel {
-    height: 20em;
+    height: 18em;
   }
 }
