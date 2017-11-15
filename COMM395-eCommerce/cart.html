@@ -23,6 +23,9 @@
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Amiko|Roboto+Condensed:700|Roboto:500" rel="stylesheet">
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,24 +53,24 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navCollapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="about.html" id="nav-button">About</a>
-            </li>
-            <li>
-              <a href="contact.html" id="nav-button">Contact</a>
-            </li>
-            <li>
-              <a href="index.html#products" id="nav-button">Products</a>
-            </li>
-            <li>
-              <a href="cart.html" id="nav-button">
-                <i class="fa fa-shopping-cart"></i> $0.00
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="about.html" id="nav-button">About</a>
+          </li>
+          <li>
+            <a href="contact.html" id="nav-button">Contact</a>
+          </li>
+          <li>
+            <a href="index.html#products" id="nav-button">Products</a>
+          </li>
+          <li>
+            <a href="cart.html" id="nav-button">
+              <i class="fa fa-shopping-cart"></i> $0.00
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
   </nav>
@@ -87,16 +90,16 @@
             <form name="sentMessage" id="contactForm" novalidate>
               <!-- Card Type Buttons -->
               <div class="btn-group col-xs-12" role="group">
-                <button type="button" class="btn btn-default selected col-xs-3">
+                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
                   <i class="fa fa-cc-visa fa-4x"></i>
                 </button>
-                <button type="button" class="btn btn-default col-xs-3">
+                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
                   <i class="fa fa-cc-amex fa-4x"></i>
                 </button>
-                <button type="button" class="btn btn-default col-xs-3">
+                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
                   <i class="fa fa-cc-paypal fa-4x"></i>
                 </button>
-                <button type="button" class="btn btn-default col-xs-3">
+                <button type="button" class="btn btn-default col-xs-3" id="pay-btn">
                   <i class="fa fa-cc-discover fa-4x"></i>
                 </button>
               </div>
@@ -423,10 +426,11 @@
   <!-- /.container -->
   <!-- /.footer -->
 
+  <!-- Script for payment type buttons -->
   <script>
-    $('button').on('click', function () {
-      $('button').removeClass('selected');
-      $(this).addClass('selected');
+    $("#pay-btn").click(function () {
+      $("button").removeClass("btn-selected");
+      $(this).addClass("btn-selected");
     });
   </script>
 
