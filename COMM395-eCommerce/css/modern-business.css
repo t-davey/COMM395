@@ -92,9 +92,8 @@ header.carousel .fill {
 .carousel-caption {
   position: absolute;
   background-color: rgb(68, 68, 68, 0.3);
-  /* font-family: 'Roboto Condensed', sans-serif; */
-  font-family: 'Raleway', sans-serif;  
-  
+  font-family: 'Raleway', sans-serif;
+
 }
 
 
@@ -102,34 +101,28 @@ header.carousel .fill {
 
 .page-header {
   border-color: #337AB7;
-  /* font-family: 'Roboto Condensed', sans-serif; */
   font-family: 'Oswald', sans-serif;
 }
 
 h3 {
-  /* font-family: 'Roboto Condensed', sans-serif; */
-  font-family: 'Raleway', sans-serif;  
+  font-family: 'Raleway', sans-serif;
 }
 
 
 .panel-heading h4 {
-  /* font-family: 'Amiko', sans-serif; */
   font-family: 'Oswald', sans-serif;
   font-size: 1.75em;
   color: white;
 }
 
 .panel-body {
-  /* font-family: 'Amiko', sans-serif; */
   font-family: 'Raleway', sans-serif;
 }
 
 .btn {
-  /* font-family: 'Amiko', sans-serif; */
   font-family: 'Raleway', sans-serif;}
 
 p {
-  /* font-family: 'Amiko', sans-serif; */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -139,7 +132,11 @@ p {
 .triple_panel {
   position: relative;
   box-shadow: 0.125em 0.125em 0.125em #444;
-  
+}
+
+.triple_panel:hover {
+  box-shadow: 0.225em 0.25em 0.5em #333;
+  transition-duration: 0.3s;
 }
 
 .triple_footer {
@@ -208,7 +205,7 @@ p {
   position: relative;
   box-shadow: 0.125em 0.125em 0.125em #444;
   font-family: 'Raleway', sans-serif;
-  
+
 }
 
 .about_footer {
@@ -232,7 +229,7 @@ p {
   min-height: 18em;
   position: relative;
   font-family: 'Raleway', sans-serif;
-  
+
 }
 
 .testimonial_footer {
@@ -260,7 +257,7 @@ p {
 }
 
 .contact_panel {
-  box-shadow: 0.125em 0.125em 0.125em #444;  
+  box-shadow: 0.125em 0.125em 0.125em #444;
 }
 
 /* Shopping Cart Page Styles*/
@@ -278,14 +275,14 @@ p {
 .billing_panel {
   min-height: 40em;
   position: relative;
-  box-shadow: 0.125em 0.125em 0.125em #444;    
+  box-shadow: 0.125em 0.125em 0.125em #444;
 }
 
 .cart_panel {
   min-height: 40em;
   position: relative;
-  box-shadow: 0.125em 0.125em 0.125em #444;  
-  
+  box-shadow: 0.125em 0.125em 0.125em #444;
+
 }
 
 .panel-footer {

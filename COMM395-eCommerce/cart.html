@@ -22,8 +22,8 @@
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Amiko|Roboto+Condensed:700|Roboto:500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300|Raleway:500" rel="stylesheet">   
-  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300|Raleway:500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -279,9 +279,11 @@
           <div class="panel-footer">
             <div class="row text-center">
               <div class="col-xs-4">
-                <button type="button" class="btn btn-primary btn-block">
-                  <i class="fa fa-arrow-circle-left"></i> Back to Store
-                </button>
+                <!-- <button type="button" class="btn btn-primary btn-block"> -->
+                  <a href="index.html#products" class="btn btn-primary btn-block" role="button">
+                    <i class="fa fa-arrow-circle-left"></i> Back to Store
+                  </a>
+                <!-- </button> -->
               </div>
               <div class="col-xs-5">
                 <h4 class="text-right">Total
@@ -430,7 +432,7 @@
 
   <!-- Script for payment type buttons -->
   <script>
-    $("#pay-btns button").click(function () {
+    $("#pay-btns button").click(function() {
       $("#pay-btns button").removeClass("btn-selected");
       $(this).addClass("btn-selected");
     });
@@ -439,7 +441,7 @@
   <!-- Toggles spinning refresh icon -->
   <!-- Serves no real purpose, I just wanted to mess with jQuery -->
   <script>
-    $("button").click(function ()  {
+    $("button").click(function() {
       $("#refresh-btn").toggleClass("fa-spin");
     });
   </script>
