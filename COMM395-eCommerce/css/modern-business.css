@@ -285,6 +285,14 @@ p {
 
 }
 
+.price {
+  font-family: 'Amiko', sans-serif;
+}
+
+.controls {
+  font-family: 'Amiko', sans-serif;
+}
+
 .panel-footer {
   position: absolute;
   height: 4em;
